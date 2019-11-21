@@ -33,6 +33,7 @@
       .card-height .order-first{
          order: 2;
       }
+
    }
 
 
@@ -107,8 +108,8 @@
    }
 
    .card-header {
-      width: 80%;
-      margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
     border: none;
     background: #a7a7a7;
     height: 80px;
@@ -130,6 +131,7 @@
    order: 3;
 }
 
+
 .img-carousel {
    height: 250px;
    padding-top: 1rem;
@@ -148,3 +150,30 @@ span.span-owl.bg-light.p-3 {
    background: #000000c9 !important;
    color: white;
 }
+
+.owl-nav{
+   display: flex;
+   justify-content: space-between;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+   padding: 20px !important;
+   border-radius: 50% !important;
+   background-color: black !important;
+   color: #fff !important;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+   padding: 20px !important;
+   border-radius: 50% !important;
+   background-color: black !important;
+   color: #fff !important;
+}
+
+
+
+.maps-img{
+   background-size: cover !important;
+   background-position: bottom !important;
+   height: 400px;
+  }
