@@ -79,6 +79,10 @@
       height: 100vh;
    }
 
+   .jumbotron{
+      background-color: transparent;
+   }
+
    .jumbotron.hero{
       top: 0;
       left: 0;
