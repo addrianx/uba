@@ -16,7 +16,7 @@
    }
 
    .mt-7{
-      margin-top: 9rem;
+      margin-top: 7rem;
    }
 
    .bg-transparent{
@@ -33,18 +33,32 @@
       position: fixed;
       width: 250px;
       height: 100vh;
-      background-color: rgb(32, 32, 32);
+      background-color: rgba(0, 0, 0, 0.774);
       z-index: 99;
+      animation: slide 0.5s forwards;
+      animation-delay: 2s;
+      transition: .4s all;
       
+   }
+
+   @keyframes menu-wrapper{
+      100% { left: 0; }
    }
 
    .menu-wrapper.hide{
       width: 0px;
+      transition: .4s all;
    }
 
    .menu-wrapper .wrapper-ul a.nav-link{
-      color: white;
-      
+      color: rgb(226, 225, 225);
+      font-weight: 700;
+      transition: .5s all;
+   }
+
+   .menu-wrapper .wrapper-ul a.nav-link:hover,
+   .menu-wrapper .wrapper-ul a.nav-link:focus{
+      transform: translate(20px, 0px);
    }
 
    .navbar-ul-wrap {

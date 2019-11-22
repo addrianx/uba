@@ -8,9 +8,18 @@
        width: 1170px;
        margin: 0 auto;
     }
-    
+
     h5.jumbo-text{
        font-size: 1.7rem;
+    }
+
+    .card-maps .text-box h3{
+       text-align: center;
+    }
+
+    .card-maps .text-box ul {
+       list-style: none;
+       padding-inline-start: 10px;
     }
 
  }

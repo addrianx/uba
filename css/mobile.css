@@ -22,7 +22,23 @@
 
    .container-text.mt-5{
       margin-top: 0 !important;
-      padding: 4.3rem !important;
+      padding: 4.3rem 1rem 4.3rem 1rem !important;
    }
+
+   .card-maps .text-box ul li{
+      padding: 0px 1.4rem 0px 1.4rem;
+   }
+
+   .card-maps .text-box h3{
+      text-align: center;
+      margin-bottom: 1.2rem;
+      font-weight: 800;
+      font-size: 1.2rem;
+   }
+
+   .card-maps .text-box {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+  }
 
 }

@@ -17,9 +17,13 @@
 <div class="menu-wrapper hide">
    <div class="navbar-ul-wrap">
       <button class="btn btn-menu-nav">X</button>
-
+         
+      <div class="logo-nav text-center py-4">
+         <span class="text-white">LOGO</span>
+      </div>
+         
          <div class="wrapper-ul d-none">
-               
+
                <a class="nav-link" href="#">BERANDA</a>
                
                <a class="nav-link" href="#">PAKET WISATA</a>
@@ -98,14 +102,14 @@
    <div class="row">
 
       <div class="col-12 col-lg-10 offset-lg-1">
-         <div class="card mt-5 card-first rounded-4">
+         <div class="card mt-7 card-first rounded-4">
             <div class="card-body p-0">
                <div class="row no-gutters">
                   <div class="col-12 col-lg-5 img-top" style="background: url(image/data-1.png);"></div>
                      <div class="col-12 col-lg-7 d-flex align-items-center p-4 mt-4">
                         <div class="box-text">
-                           <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur explicabo placeat hic in odio quos nemo provident obcaecati ad adipisci asperiores, deleniti omnis enim eligendi voluptatum neque, laudantium harum.</p>
+                           <h3>Pilih Destinasi Wisatamu.</h3>
+                           <p>Yogyakarta merupakan salah satu tujuan wisata terfavorit di indonesia menawarkan beraneka ragam tempat wisata yang menarik untuk dikujungi.</p>
                         </div>
                      </div>
                </div>
@@ -120,8 +124,8 @@
                   <div class="col-12 col-lg-5 order-last img-btm" style="background: url(image/data-2.png);"></div>
                   <div class="col-12 col-lg-7 d-flex order-first align-items-center p-4 mt-4">
                      <div class="box-text">
-                        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur explicabo placeat hic in odio quos nemo provident obcaecati ad adipisci asperiores, deleniti omnis enim eligendi voluptatum neque, laudantium harum.</p>
+                        <h3>Beraneka Ragam Wisata.</h3>
+                        <p>Nikmati berbagai pesona khas wisata jogja mulai dari wisata belanja, wisata sejarah, wisata pendidikan, wisata pantai, wisata gunung, wisata candi, museum, goa dan aneka ragam lainnya.</p>
                      </div>
                   </div>
                </div>
@@ -157,15 +161,15 @@
       <div class="col-12">
          <div class="card card-how mt-7">
             <div class="card-header">
-                  <h4 class="text-center">FASILITAS <span class="text-brown">Traveluba</span> ?</h4>
+                  <h4 class="text-center">FASILITAS <span class="text-brown">Traveluba</span></h4>
             </div>
 
             <div class="card-body">
                <div class="owl-carousel">
-                  <div class="img-carousel" style="background: url('image/hotel.jpg');"><span class="bg-light span-owl p-3">transport deluxe</span></div>
-                  <div class="img-carousel" style="background: url('image/room-hotel.jpg');"><span class="bg-light span-owl p-3">hotel bintang 3</span></div>
-                  <div class="img-carousel" style="background: url('image/asuransi.webp');"><span class="bg-light span-owl p-3">asuransi sakit jiwa</span></div>
-                  <div class="img-carousel" style="background: url('image/support.png');"><span class="bg-light span-owl p-3">support 25jam</span></div>
+                  <div class="img-carousel" style="background: url('image/hotel.jpg');"><span class="bg-light span-owl p-3">Transport deluxe</span></div>
+                  <div class="img-carousel" style="background: url('image/room-hotel.jpg');"><span class="bg-light span-owl p-3">Hotel bintang 3</span></div>
+                  <div class="img-carousel" style="background: url('image/asuransi.webp');"><span class="bg-light span-owl p-3">Asuransi</span></div>
+                  <div class="img-carousel" style="background: url('image/support.png');"><span class="bg-light span-owl p-3">Support 24jam</span></div>
                </div>
             </div>
          </div>
@@ -177,17 +181,17 @@
 
 <div class="container-fluid">
    <div class="row no-gutters">
-      <div class="col-12">
+      <div class="col-10 col-lg-10 offset-1 offset-lg-1">
          <div class="card card-maps mt-7">
             <div class="card-body">
                <div class="row no-gutters">
                   <div class="col-12 col-lg-6 maps-img" style="background: url(image/maps.png);"></div>
-                     <div class="col-12 col-lg-6 container-text mt-5 d-flex justify-content-center align-items-center">
+                     <div class="col-12 col-lg-6 container-text d-flex justify-content-center align-items-center">
                         <div class="text-box">
                            <h3>PT UWAIS BERKAH ABADI</h3>
                            <ul>
                               <li>
-                                 -PERMATA KHARISMA BLOK B1 MUARA SANDING GARUT
+                                 -Permata Karisma Blok B1 Muara Sanding Garut
                               </li>
                               <li>
                                  -(0262) 2807333
@@ -201,6 +205,18 @@
                </div>
             </div>
          </div>         
+      </div>
+   </div>
+</div>
+
+<div class="container-fluid px-0">
+   <div class="row no-gutters">
+      <div class="col-12 mt-7">
+         <div class="card">
+            <div class="card-body h-100 bg-dark">
+
+            </div>
+         </div>
       </div>
    </div>
 </div>
@@ -235,27 +251,6 @@
        $('.menu-wrapper').toggleClass('hide');
        $('.wrapper-ul').toggleClass('d-none');
     })
-
-   //  $(window).scroll(function(){
-      
-   //    var wScroll = $(window).scrollTop()
-   //    //console.log(wScroll)
-   //    if(wScroll > 20){
-   //          $('nav').removeClass('bg-transparent');
-   //          $('ul.nav.navbar-nav, li.nav-item, a.nav-link').css('color', 'black')
-   //          $('ul.nav.navbar-nav, li.nav-item').css('padding', '0rem')
-   //       }else{
-   //          $('nav').addClass('bg-transparent');
-   //          $('ul.nav.navbar-nav, li.nav-item, a.nav-link').css('color', 'white')
-   //          $('ul.nav.navbar-nav, li.nav-item').css('padding', '.4rem')
-   //       }     
-   //    })
-
-   //    var widthScreen = 991
-   //    if($(window).width() < widthScreen){
-   //       console.log('ini mobile screen')
-   //    } 
-
 
   })
 </script>
