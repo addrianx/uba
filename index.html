@@ -12,56 +12,50 @@
    <link rel="stylesheet" href="css/style.css">
 
 </head>
-
-<style>
-
-</style>
-
 <body>
- 
-  
-   <div class="container-fluid">
-      <div class="row">
-         <nav class="col navbar navbar-expand-lg fixed-top navbar-light bg-transparent bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <a class="nav-link text-muted hidden-lg" href="#">BRAND</a>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
+<div class="container-fluid">
+   <div class="row">
+      <nav class="col navbar navbar-expand-lg fixed-top navbar-light bg-transparent bg-light">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
 
-              <ul class="nav navbar-nav nav-start flex-fill w-100 flex-nowrap">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">BERANDA</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">PAKET WISATA</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">FASILITAS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">FAQ</a>
-                </li>
-              </ul>
-              <ul class="nav navbar-nav nav-brand flex-fill w-100 justify-content-center">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">BRAND</a>
-                  </li>
-              </ul>
-              <ul class="nav navbar-nav md-mt-2 nav-end flex-fill w-100 justify-content-end">  
-                 <li class="nav-item">
-                  <a class="nav-link" href="#">TENTANG KAMI</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">GALLERY</a>
-                </li>
-              </ul>
-            </div> 
-          </nav>
-      </div>
+         <a class="nav-link text-muted hidden-lg" href="#">BRAND</a>
+         
+         <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="nav navbar-nav nav-start flex-fill w-100 flex-nowrap">
+               <li class="nav-item active">
+               <a class="nav-link" href="#">BERANDA</span></a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="#">PAKET WISATA</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="#">FASILITAS</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="#">FAQ</a>
+               </li>
+            </ul>
+            <ul class="nav navbar-nav nav-brand flex-fill w-100 justify-content-center">
+               <li class="nav-item">
+                  <a class="nav-link" href="#">BRAND</a>
+               </li>
+            </ul>
+            <ul class="nav navbar-nav md-mt-2 nav-end flex-fill w-100 justify-content-end">  
+               <li class="nav-item">
+               <a class="nav-link" href="#">TENTANG KAMI</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="#">GALLERY</a>
+               </li>
+            </ul>
+         </div> 
+         </nav>
    </div>
+</div>
 
 <div class="container-fluid">
    <div class="row">
@@ -215,10 +209,15 @@
 
     $(window).scroll(function(){
       var wScroll = $(window).scrollTop()
+      //console.log(wScroll)
       if(wScroll > 20){
          $('nav').removeClass('bg-transparent');
+         $('ul.nav.navbar-nav, li.nav-item, a.nav-link').css('color', 'black')
+         $('ul.nav.navbar-nav, li.nav-item').css('padding', '0rem')
       }else{
          $('nav').addClass('bg-transparent');
+         $('ul.nav.navbar-nav, li.nav-item, a.nav-link').css('color', 'white')
+         $('ul.nav.navbar-nav, li.nav-item').css('padding', '.4rem')
       }
     })
 
