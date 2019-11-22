@@ -22,6 +22,12 @@
 
    nav.col.navbar.navbar-expand-lg.navbar-light.bg-light {
       z-index: 9;
+      transition: .4s ease-in-out;
+   }
+
+   .bg-transparent{
+      color: white !important;
+      background-color: transparent !important;
    }
 
    .vh-100{
@@ -55,6 +61,7 @@
    .jumbotron .wrapper{
       z-index: 5;
    }
+
    .text-brown{
       color: #E2BA52;
    }
@@ -68,6 +75,20 @@
     border-bottom: 1px solid #e2ba52;
     padding-bottom: 5px;
    }
+
+   button.btn.bg-brown.p-2.radius-25 {
+      margin-top: 4rem;
+      color: #e2ba52;
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+      background: transparent;
+      border: 2px solid #e2ba52;
+  }
+
+  button.btn.bg-brown.p-2.radius-25:hover{
+   color: white;
+   border: 2px solid #fff;
+  }
 
    /* card intro style */
    .img-top{

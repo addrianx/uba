@@ -22,7 +22,7 @@
   
    <div class="container-fluid">
       <div class="row">
-         <nav class="col navbar navbar-expand-lg navbar-light bg-light">
+         <nav class="col navbar navbar-expand-lg fixed-top navbar-light bg-transparent bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -195,6 +195,7 @@
 <script src="vendor/owlcarosel/owl.carousel.js"></script>  
 <script>
   $(document).ready(function() {
+
     var owl = $('.owl-carousel');
     owl.owlCarousel({
       margin: 10,
@@ -211,6 +212,17 @@
         }
       }
     })
+
+    $(window).scroll(function(){
+      var wScroll = $(window).scrollTop()
+      if(wScroll > 20){
+         $('nav').removeClass('bg-transparent');
+      }else{
+         $('nav').addClass('bg-transparent');
+      }
+    })
+
+
   })
 </script>
 </body>
