@@ -23,8 +23,8 @@
          border-top: 1px solid rgb(80, 80, 80);
       }  
 
-      .jumbo-text{
-         font-size: 1.1rem;
+      h5.jumbo-text{
+         font-size: 1.4rem;
       }
 
       .card-height .order-last{
@@ -41,6 +41,9 @@
      .w-1170{
          width: 1170px;
          margin: 0 auto;
+      }
+      h5.jumbo-text{
+         font-size: 1.7rem;
       }
 
    }
@@ -62,9 +65,7 @@
       color: white
    }
 
-   h5.jumbo-text{
-      font-size: 1.7rem;
-   }
+
 
    h3.text-brown{
     border-bottom: 1px solid #e2ba52;
