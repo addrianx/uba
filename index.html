@@ -14,11 +14,34 @@
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="menu-wrapper hide">
+   <div class="navbar-ul-wrap">
+      <button class="btn btn-menu-nav">X</button>
+
+         <div class="wrapper-ul d-none">
+               
+               <a class="nav-link" href="#">BERANDA</a>
+               
+               <a class="nav-link" href="#">PAKET WISATA</a>
+               
+               <a class="nav-link" href="#">FASILITAS</a>
+               
+               <a class="nav-link" href="#">FAQ</a>
+               
+               <a class="nav-link" href="#">TENTANG KAMI</a>
+               
+               <a class="nav-link" href="#">GALLERY</a>
+               
+         </div>
+
+      </div>
+</div>   
+
+<!-- <div class="container-fluid">
    <div class="row">
       <nav class="col navbar navbar-expand-lg fixed-top navbar-light bg-transparent bg-light">
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class=""></span>
          </button>
 
          <a class="nav-link text-muted hidden-lg" href="#">BRAND</a>
@@ -55,7 +78,7 @@
          </div> 
          </nav>
    </div>
-</div>
+</div> -->
 
 <div class="container-fluid">
    <div class="row">
@@ -159,7 +182,7 @@
             <div class="card-body">
                <div class="row no-gutters">
                   <div class="col-12 col-lg-6 maps-img" style="background: url(image/maps.png);"></div>
-                     <div class="col-12 col-lg-6 mt-5 d-flex justify-content-center align-items-center">
+                     <div class="col-12 col-lg-6 container-text mt-5 d-flex justify-content-center align-items-center">
                         <div class="text-box">
                            <h3>PT UWAIS BERKAH ABADI</h3>
                            <ul>
@@ -207,19 +230,31 @@
       }
     })
 
-    $(window).scroll(function(){
-      var wScroll = $(window).scrollTop()
-      //console.log(wScroll)
-      if(wScroll > 20){
-         $('nav').removeClass('bg-transparent');
-         $('ul.nav.navbar-nav, li.nav-item, a.nav-link').css('color', 'black')
-         $('ul.nav.navbar-nav, li.nav-item').css('padding', '0rem')
-      }else{
-         $('nav').addClass('bg-transparent');
-         $('ul.nav.navbar-nav, li.nav-item, a.nav-link').css('color', 'white')
-         $('ul.nav.navbar-nav, li.nav-item').css('padding', '.4rem')
-      }
+    $('.btn-menu-nav').on('click', function(){
+       console.log('button menu clicked')
+       $('.menu-wrapper').toggleClass('hide');
+       $('.wrapper-ul').toggleClass('d-none');
     })
+
+   //  $(window).scroll(function(){
+      
+   //    var wScroll = $(window).scrollTop()
+   //    //console.log(wScroll)
+   //    if(wScroll > 20){
+   //          $('nav').removeClass('bg-transparent');
+   //          $('ul.nav.navbar-nav, li.nav-item, a.nav-link').css('color', 'black')
+   //          $('ul.nav.navbar-nav, li.nav-item').css('padding', '0rem')
+   //       }else{
+   //          $('nav').addClass('bg-transparent');
+   //          $('ul.nav.navbar-nav, li.nav-item, a.nav-link').css('color', 'white')
+   //          $('ul.nav.navbar-nav, li.nav-item').css('padding', '.4rem')
+   //       }     
+   //    })
+
+   //    var widthScreen = 991
+   //    if($(window).width() < widthScreen){
+   //       console.log('ini mobile screen')
+   //    } 
 
 
   })

@@ -19,4 +19,10 @@
    .card-height .order-last{
       order: 1;
    }
+
+   .container-text.mt-5{
+      margin-top: 0 !important;
+      padding: 4.3rem !important;
+   }
+
 }

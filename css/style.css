@@ -28,6 +28,42 @@
       height: 100vh;
    }
 
+
+   .menu-wrapper{
+      position: fixed;
+      width: 250px;
+      height: 100vh;
+      background-color: rgb(32, 32, 32);
+      z-index: 99;
+      
+   }
+
+   .menu-wrapper.hide{
+      width: 0px;
+   }
+
+   .menu-wrapper .wrapper-ul a.nav-link{
+      color: white;
+      
+   }
+
+   .navbar-ul-wrap {
+      position: relative;
+   }
+
+   button.btn-menu-nav {
+      position: absolute;
+      color: white;
+      font-weight: 700;
+      margin-bottom: 12px;
+      background-color: tomato;
+      border-radius: 0px;
+      right: -45px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1.3rem;
+   }
+
 /* Navbar CSS */
    nav.col.navbar.navbar-expand-lg.navbar-light.bg-light {
       z-index: 9;
@@ -51,7 +87,6 @@
    }
 
 
-   
    /* Jumbotron Styling */
    .jumbotron{
       background-color: transparent;
