@@ -1,4 +1,6 @@
-   
+@import url("desktop.css"); 
+@import url("mobile.css"); 
+
    body{
       background: #ECECEC;
       font-family: 'Source Sans Pro', sans-serif;
@@ -9,46 +11,6 @@
       border: 0px;
    }
   
-   @media screen and (max-width: 991px){
-      .nav-brand{
-         display: none;
-      } 
-
-      .md-mt-2{
-         margin-top: 1.1rem;
-         margin-bottom: 1.1rem;
-      }
-         
-      .nav-end{
-         border-top: 1px solid rgb(80, 80, 80);
-      }  
-
-      h5.jumbo-text{
-         font-size: 1.4rem;
-      }
-
-      .card-height .order-last{
-         order: 1;
-      }
-   }
-
-
-
-   @media screen and (min-width: 992px){
-     .hidden-lg{
-        display: none;
-     }
-     .w-1170{
-         width: 1170px;
-         margin: 0 auto;
-      }
-      h5.jumbo-text{
-         font-size: 1.7rem;
-      }
-
-   }
-
-
    .radius-25{
       border-radius: 25px;
    }
@@ -56,21 +18,7 @@
    .mt-7{
       margin-top: 9rem;
    }
-   .text-brown{
-      color: #E2BA52;
-   }
 
-   .bg-brown{
-      background-color: rgb(196, 153, 44);
-      color: white
-   }
-
-
-
-   h3.text-brown{
-    border-bottom: 1px solid #e2ba52;
-    padding-bottom: 5px;
-   }
 
    nav.col.navbar.navbar-expand-lg.navbar-light.bg-light {
       z-index: 9;
@@ -79,7 +27,8 @@
    .vh-100{
       height: 100vh;
    }
-
+   
+   /* Jumbotron Styling */
    .jumbotron{
       background-color: transparent;
    }
@@ -106,7 +55,21 @@
    .jumbotron .wrapper{
       z-index: 5;
    }
+   .text-brown{
+      color: #E2BA52;
+   }
 
+   .bg-brown{
+      background-color: rgb(196, 153, 44);
+      color: white
+   }
+
+   h3.text-brown{
+    border-bottom: 1px solid #e2ba52;
+    padding-bottom: 5px;
+   }
+
+   /* card intro style */
    .img-top{
     background-size: cover !important;
     height: 300px;
@@ -136,88 +99,96 @@
       box-shadow: 0px 0px 0px 0px white;
    }
 
+   .order-first{
+      order: 1;
+   }
+
+   .order-last{
+      order: 3;
+   }
+
+   /* explain card */
    .explain-card{
       border-radius: 0px;
    }
 
+   .explain-card{
+      background-size: cover  ;
+      background-position: center;
+   }
+   
+   .explain-card .card-body .box-text{
+      padding-top: 3.2rem;
+      padding-bottom: 3.2rem;
+   }
+
+   .overlay.opacity-50{
+      background-color: rgba(0, 0, 0, 0.486);
+   }
+
+   .card.card-how .card-header h4{
+      line-height: 2.3;
+   }
+
+
+
+   /* carousel owl styling */
    .card-header {
-    width: 80%;
-    margin: 0 auto;
-    border: none;
-    background: #ffffff;
-    height: 80px;
-    margin-top: -40px;
-    border-radius: 0px;
-}
+      width: 80%;
+      margin: 0 auto;
+      border: none;
+      background: #ffffff;
+      height: 80px;
+      margin-top: -40px;
+      border-radius: 0px;
+     }
 
-.overlay.opacity-50{
-   background-color: rgba(0, 0, 0, 0.486);
-}
+   .img-carousel {
+      height: 250px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-size: cover !important;
+      background-position: center !important;
+      display: flex;
+   }
 
-.card.card-how .card-header h4{
-   line-height: 2.3;
-}
+   span.span-owl.bg-light.p-3 {
+      margin-bottom: -16px !important;
+      align-self: flex-end;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      background: #000000c9 !important;
+      color: white;
+   }
 
+   .owl-nav{
+      display: flex;
+      justify-content: space-between;
+   }
 
-.order-first{
-   order: 1;
-}
+   .owl-carousel .owl-nav button.owl-prev{
+      padding: 20px !important;
+      border-radius: 50% !important;
+      background-color: black !important;
+      color: #fff !important;
+   }
 
-.order-last{
-   order: 3;
-}
+   .owl-carousel .owl-nav button.owl-next{
+      padding: 20px !important;
+      border-radius: 50% !important;
+      background-color: black !important;
+      color: #fff !important;
+   }
 
+   
+   /* card maps styling */
+   .card-maps .card-body{
+      padding: 0 !important;
+   }
 
-.explain-card .card-body .box-text{
-   padding-top: 3.2rem;
-   padding-bottom: 3.2rem;
-}
-
-.img-carousel {
-   height: 250px;
-   padding-top: 1rem;
-   padding-bottom: 1rem;
-   background-size: cover !important;
-   background-position: center !important;
-   display: flex;
-}
-
-span.span-owl.bg-light.p-3 {
-   margin-bottom: -16px !important;
-   align-self: flex-end;
-   margin: 0 auto;
-   width: 100%;
-   text-align: center;
-   background: #000000c9 !important;
-   color: white;
-}
-
-.owl-nav{
-   display: flex;
-   justify-content: space-between;
-}
-
-.owl-carousel .owl-nav button.owl-prev{
-   padding: 20px !important;
-   border-radius: 50% !important;
-   background-color: black !important;
-   color: #fff !important;
-}
-
-.owl-carousel .owl-nav button.owl-next{
-   padding: 20px !important;
-   border-radius: 50% !important;
-   background-color: black !important;
-   color: #fff !important;
-}
-
-
-.card-maps .card-body{
-   padding: 0 !important;
-}
-
-.maps-img{
-   background-size: cover !important;
-   background-position: bottom !important;
-   height: 400px;
-  }
+   .maps-img{
+      background-size: cover !important;
+      background-position: bottom !important;
+      height: 400px;
+   }

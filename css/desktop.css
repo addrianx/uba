@@ -1,0 +1,13 @@
+@media screen and (min-width: 992px){
+   .hidden-lg{
+      display: none;
+   }
+   .w-1170{
+       width: 1170px;
+       margin: 0 auto;
+    }
+    h5.jumbo-text{
+       font-size: 1.7rem;
+    }
+
+ }
