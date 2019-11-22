@@ -23,10 +23,13 @@
          border-top: 1px solid rgb(80, 80, 80);
       }  
 
-      .card-height .order-first{
-         order: 2;
+      .jumbo-text{
+         font-size: 1.1rem;
       }
 
+      .card-height .order-last{
+         order: 1;
+      }
    }
 
 
@@ -43,12 +46,29 @@
    }
 
 
+   .radius-25{
+      border-radius: 25px;
+   }
 
    .mt-7{
       margin-top: 9rem;
    }
    .text-brown{
       color: #E2BA52;
+   }
+
+   .bg-brown{
+      background-color: rgb(196, 153, 44);
+      color: white
+   }
+
+   h5.jumbo-text{
+      font-size: 1.7rem;
+   }
+
+   h3.text-brown{
+    border-bottom: 1px solid #e2ba52;
+    padding-bottom: 5px;
    }
 
    nav.col.navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -65,6 +85,17 @@
       width: 100%;
       background-position: bottom center;
       background-size: cover;
+   }
+
+   .custom-jumbotron{
+      padding: 0;
+      margin: 0;
+   }
+
+   .jumbotron-overlay{
+      background-color: rgba(0, 0, 0, 0.329);
+      height: 100vh;
+      display: flex;
    }
 
    .jumbotron .wrapper{
@@ -131,6 +162,11 @@
    order: 3;
 }
 
+
+.explain-card .card-body .box-text{
+   padding-top: 3.2rem;
+   padding-bottom: 3.2rem;
+}
 
 .img-carousel {
    height: 250px;
