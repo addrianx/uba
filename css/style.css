@@ -24,6 +24,10 @@
       width: 1.25em;
    }
 
+   nav.navbar{
+      transition: .5s all;
+   }
+
    .bg-transparent{
       color: white !important;
       background-color: transparent !important;
@@ -33,13 +37,25 @@
       height: 100vh;
    }
 
+   .logo-nav .uba-icon.uba-logo{
+      font-size: 4rem;
+      color: white;
+   }
+
+   a.navbar-brand .uba-icon.uba-logo{
+      font-size: 3rem;
+   }
+
+   .nav-transparent{
+      background-color: transparent !important;
+   }
 
    .menu-wrapper{
       position: fixed;
       width: 250px;
       height: 100vh;
-      background-color: rgba(0, 0, 0, 0.842);
-      z-index: 99;
+      background-color: rgba(0, 0, 0, 0.973);
+      z-index: 9999;
       animation: slide 0.5s forwards;
       animation-delay: 2s;
       transition: .4s all;
@@ -71,13 +87,10 @@
    }
 
    button.btn-menu-nav {
-      position: absolute;
       color: white;
       font-weight: 700;
-      margin-bottom: 12px;
       background-color: tomato;
       border-radius: 0px;
-      right: -52px;
       padding-left: 1rem;
       padding-right: 1rem;
       font-size: 1.3rem;
@@ -225,7 +238,12 @@
 
 
 
+
    /* carousel owl styling */
+
+   section.carousel-slide .card-how .card-header{
+      border-radius: 0px;
+   }
    .card-header {
       width: 80%;
       margin: 0 auto;

@@ -12,10 +12,7 @@
       border-top: 1px solid rgb(80, 80, 80);
    }  
 
-   .logo-nav .uba-icon.uba-logo{
-      font-size: 4rem;
-      color: white;
-   }
+
 
    h5.jumbo-text{
       font-size: 1.5rem;
@@ -33,6 +30,11 @@
    .container-text.mt-5{
       margin-top: 0 !important;
       padding: 4.3rem 1rem 4.3rem 1rem !important;
+   }
+
+   /* Section banner wide */
+   section.banner-wide .explain-card h4.jumbo-text{
+      font-size: 1.2rem;
    }
 
    .card-maps .text-box ul li{
