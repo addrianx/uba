@@ -38,7 +38,7 @@
       position: fixed;
       width: 250px;
       height: 100vh;
-      background-color: rgba(0, 0, 0, 0.774);
+      background-color: rgba(0, 0, 0, 0.842);
       z-index: 99;
       animation: slide 0.5s forwards;
       animation-delay: 2s;
