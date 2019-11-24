@@ -330,3 +330,87 @@
   .text-box li a{
      color: #fff;
   }
+
+
+
+  /* Halaman Gallery */
+  .card-situs{
+   padding: 0px;
+   }
+
+   .img-site{
+   min-height: 200px;
+   background-size: cover !important;
+   background-position: center;
+   transition: .5s all;
+   }
+
+.img-site:hover{
+
+overflow: hidden;
+}
+
+.z-index-2{
+z-index: 2;
+}
+
+.z-index-0{
+z-index: 0;
+}
+
+.border-situs{
+border: 2px solid white;
+padding: 10px;
+    color: white;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.border-situs:hover{
+   transform: scale(1.05);
+}
+.situs-wwrapper{
+   overflow: hidden !important;
+}
+
+.overlay{
+background-color: rgba(0, 0, 0, 0.63);
+    height: 100%;
+    transition: .4s all;
+}
+.overlay:hover{
+   background-color: transparent;
+}
+
+.m-width{
+   max-width: 80% !important;
+}
+
+.banner-situs {
+   min-height: 200px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.banner-situs h3{
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.text-banner h4{
+   margin-top: 1.25rem;
+   margin-bottom: 1.25rem;
+   font-weight: 600;
+   text-align: center;
+}
+
+
+
+/* Halaman fasilitas */
+
+.fasilitas-image{
+   min-height: 250px;
+   background-size: cover;
+   background-position: center;
+}
