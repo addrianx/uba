@@ -317,3 +317,16 @@
       list-style: none;
       padding-inline-start: 0px;
    }
+
+   .text-box li {
+      background: #828484;
+      margin: 9px;
+      padding: 8px;
+      color: #fff !important;
+      border-radius: 4px;
+      overflow: hidden;
+  }
+
+  .text-box li a{
+     color: #fff;
+  }
