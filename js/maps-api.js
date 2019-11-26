@@ -3,24 +3,26 @@ function addMarkersToMap(map) {
    map.addObject(uba_office);
 }
 
- // Initialize the platform object:
- var platform = new H.service.Platform({
- 'apikey': 'bya_2amiUMMXCIxyhDjOWeC4surSQTV2KUUmaU6k6g4'
- });
+  //Initialize the Platform object:
+  var platform = new H.service.Platform({
+    'apikey': 'bya_2amiUMMXCIxyhDjOWeC4surSQTV2KUUmaU6k6g4'
+  });
 
- // Obtain the default map types from the platform object
- var maptypes = platform.createDefaultLayers();
+  // Get the default map types from the Platform object:
+  var defaultLayers = platform.createDefaultLayers();
 
- // Instantiate (and display) a map object:
- var map = new H.Map(
- document.getElementById('mapContainer'),
- maptypes.vector.normal.map,
- {
-   zoom: 18,
-   center: { lng: 107.899836, lat: -7.231817 }
- });
+  // Instantiate the map:
+  var map = new H.Map(
+    document.getElementById('mapContainer'),
+    defaultLayers.vector.normal.map,
+    {
+      zoom: 16,
+      center: { lng: 107.899836, lat: -7.231817 }
+    });
 
-// Now use the map as required...
-window.onload = function () {
-addMarkersToMap(map);
-}    
+    window.onload = function () {
+    addMarkersToMap(map);
+    } 
+
+  // Create the default UI:
+  var ui = H.ui.UI.createDefault(map, defaultLayers);   
