@@ -13,32 +13,40 @@
    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
    <link rel="stylesheet" href="css/style.css">
 
+
+   <!-- Here maps -->
+   <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+   <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+   <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+   <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+
 </head>
 <body>
 
-<div class="menu-wrapper hide">
-   <div class="navbar-ul-wrap">
-      <div class="wrapper-ul d-none">
 
-         <div class="logo-nav text-center py-2">
-            <i class="uba-icon uba-logo"></i>
-         </div>
-         <div class="link-nav">
-            <a class="nav-link" href="index.html">BERANDA</a> 
-            <a class="nav-link" href="fasilitas.html">FASILITAS</a> 
-            <a class="nav-link" href="gallery.html">SITUS WISATA</a> 
-            <a class="nav-link" href="tentang.html">TENTANG KAMI</a>   
-            <a class="nav-link" href="#">FAQ</a>                     
-         </div>
-
-      </div>
-   </div>
-</div>   
-
-<nav class="navbar navbar-light bg-light fixed-top nav-transparent">
-   <a class="navbar-brand " href="#"><i class="text-brown uba-icon uba-logo"></i></a>
-   <button class="btn btn-menu-nav"><i class="fa fa-bars"></i></button>
-</nav>
+   <div class="menu-wrapper hide">
+		<div class="navbar-ul-wrap">
+				<div class="wrapper-ul d-none">
+	
+					<div class="logo-nav text-center py-2">
+							<i class="uba-icon uba-logo"></i>
+					</div>
+					<div class="link-nav">
+							<a class="nav-link" href="index.html">BERANDA</a> 
+							<a class="nav-link" href="fasilitas.html">FASILITAS</a> 
+							<a class="nav-link" href="gallery.html">SITUS WISATA</a> 
+							<a class="nav-link" href="tentang.html">TENTANG KAMI</a>   
+							<a class="nav-link" href="#">FAQ</a>    
+					</div>
+	
+				</div>
+		</div>
+	</div>   
+	
+	<nav class="navbar navbar-light bg-light fixed-top nav-transparent">
+		<a class="navbar-brand " href="#"><i class="text-brown uba-icon uba-logo"></i></a>
+		<button class="btn btn-menu-nav"><i class="fa fa-bars"></i></button>
+	</nav>
 
 <div class="container-fluid">
    <div class="row">
@@ -152,7 +160,7 @@
             <div class="card card-maps mt-7">
                <div class="card-body">
                   <div class="row no-gutters">
-                     <div class="col-12 col-lg-6 maps-img" style="background: url(image/maps.png);"></div>
+                     <div class="col-12 col-lg-6 maps-img" id="mapContainer"></div>
                         <div class="col-12 col-lg-6 container-text d-flex justify-content-center align-items-center">
                            <div class="text-box">
                               <h3>PT UWAIS BERKAH ABADI</h3>
@@ -201,13 +209,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
 <script src="vendor/parallax.js/parallax.js"></script>
-<script src="vendor/owlcarosel/owl.carousel.js"></script>  
-<script>
-  $(document).ready(function() {
+<script src="vendor/owlcarosel/owl.carousel.js"></script>
 
-   $(window).scroll(function(){
+<script>
+
+  $(document).ready(function() {
+   
+
+
+		$(window).scroll(function(){
       var wScroll = $(window).scrollTop()
-      if(wScroll > 100){
+      if(wScroll > 80){
          $('nav').removeClass('nav-transparent');
       }else{
          $('nav').addClass('nav-transparent');
@@ -232,12 +244,13 @@
     })
 
     $('.btn-menu-nav').on('click', function(){
-       console.log('button menu clicked')
        $('.menu-wrapper').toggleClass('hide');
        $('.wrapper-ul').toggleClass('d-none');
     })
 
+
   })
 </script>
+<script src="js/maps-api.js"></script>  
 </body>
 </html>
