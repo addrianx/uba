@@ -192,11 +192,25 @@
             <div class="card">
                <div class="card-body h-100 bg-dark">
                   <div class="row">
-                     <div class="col-12"></div>
+                        
+                        <div class="col-12 col-lg-4 d-flex justify-content-center">
+                           <div class="footer-logo align-self-center">
+                              <i class="uba-icon uba-logo text-muted">Traveluba</i>
+                           </div>
+                        </div>
+                           
+                        <div class="col-12 col-lg-4 d-flex justify-content-center">
+                           <span class="date-footer text-muted align-self-center">Copyright &copy; 2019 - PT Uwais Berkah Abadi</span>
+                        </div>
 
-                     <div class="col-12"></div>
+                        <div class="col-12 col-lg-4 d-flex justify-content-center">
+                           <ul class="footer-list align-self-center">
+                              <li><a href="">Tentang</a> </li>
+                              <li><a href="">Kontak Perusahaan</a> </li>
+                              <li><a href="">Sitemap</a> </li>
+                           </ul>
+                        </div>
 
-                     <div class="col-12"></div>
                   </div>
                </div>
             </div>
@@ -246,6 +260,7 @@
     $('.btn-menu-nav').on('click', function(){
        $('.menu-wrapper').toggleClass('hide');
        $('.wrapper-ul').toggleClass('d-none');
+       $('body').toggleClass('overflow-hidden')
     })
 
 

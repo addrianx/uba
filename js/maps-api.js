@@ -26,3 +26,12 @@ function addMarkersToMap(map) {
 
   // Create the default UI:
   var ui = H.ui.UI.createDefault(map, defaultLayers);   
+
+
+
+
+
+
+
+
+  

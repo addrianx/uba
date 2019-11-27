@@ -74,12 +74,25 @@
    .menu-wrapper .wrapper-ul a.nav-link{
       color: rgb(226, 225, 225);
       font-weight: 700;
+      position: relative;
       transition: .5s all;
    }
 
    .menu-wrapper .wrapper-ul a.nav-link:hover,
    .menu-wrapper .wrapper-ul a.nav-link:focus{
       transform: translate(20px, 0px);
+   }
+
+   .menu-wrapper .wrapper-ul a.nav-link:hover::after,
+   .menu-wrapper .wrapper-ul a.nav-link:focus::after{
+       background-color: #fff;
+       width: 50%;
+       position: absolute;
+       bottom: -4px;
+       height: 2px;
+       left: 17px;
+       right: 0;
+       content: "";
    }
 
    .navbar-ul-wrap {
@@ -405,7 +418,10 @@ background-color: rgba(0, 0, 0, 0.63);
    text-align: center;
 }
 
-
+/* footer */
+.footer-logo .uba-icon{
+   font-size: 1.4rem;
+}
 
 /* Halaman fasilitas */
 
@@ -414,3 +430,5 @@ background-color: rgba(0, 0, 0, 0.63);
    background-size: cover;
    background-position: center;
 }
+
+
