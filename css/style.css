@@ -420,9 +420,27 @@ background-color: rgba(0, 0, 0, 0.63);
 
 /* footer */
 .footer-logo .uba-icon{
-   font-size: 1.4rem;
+   font-size: 1.6rem;
 }
 
+ul.footer-list{
+   padding-inline-start: 5px;
+   margin-bottom: 0px;
+}
+ul.footer-list li{
+   list-style: none;
+   padding-left: 8px;
+   padding-right: 8px;
+   display: inline-block;
+}
+ul.footer-list li a{
+   text-decoration: none;
+   color: grey;
+}
+
+ul.footer-list li a:hover{
+   color: rgb(223, 223, 223);
+}
 /* Halaman fasilitas */
 
 .fasilitas-image{
