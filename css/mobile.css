@@ -48,7 +48,9 @@
   }
 
 
-
+  .footer-logo, .date-footer, ul.footer-list{
+      margin-top: 1.4rem;
+   }
 
   /* Halaman gallery */
   h5.border-situs{
