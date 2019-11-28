@@ -15,6 +15,10 @@
       border-radius: 25px;
    }
 
+   .overflow-x-hidden{
+      overflow-x: hidden;
+   }
+
    .mt-7{
       margin-top: 7rem;
    }
@@ -159,7 +163,21 @@
       background-color: rgba(0, 0, 0, 0.329);
       height: 100vh;
       display: flex;
+      position: relative;
    }
+
+   .jumbotron-overlay::after {
+      content: "";
+      background: #a28020;
+      left: 0;
+      right: -40px;
+      margin-left: auto;
+      bottom: -41px;
+      width: 70%;
+      position: absolute;
+      height: 41px;
+      transform: skewX(-51deg);
+  }
 
    .jumbotron .wrapper{
       z-index: 5;
@@ -252,6 +270,19 @@
 
    .overlay.opacity-50{
       background-color: rgba(0, 0, 0, 0.486);
+      position: relative;
+   }
+
+   .overlay::before {
+      content: "";
+      width: 70%;
+      height: 40px;
+      left: -25px;
+      right: 0;
+      top: -40px;
+      background-color: #c18c2b;
+      position: absolute;
+      transform: skewX(-51deg);
    }
 
    .card.card-how .card-header h4{
