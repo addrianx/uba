@@ -92,7 +92,7 @@
        background-color: #fff;
        width: 50%;
        position: absolute;
-       bottom: -4px;
+       bottom: 14px;
        height: 2px;
        left: 17px;
        right: 0;
@@ -182,7 +182,7 @@
       position: absolute;
       height: 41px;
       transform: skewX(-51deg);
-  }
+   }
 
    .jumbotron .wrapper{
       z-index: 5;
@@ -331,11 +331,6 @@
       color: white;
    }
 
-   .owl-nav{
-      display: flex;
-      justify-content: space-between;
-   }
-
    .owl-carousel .owl-nav button.owl-prev{
       padding: 20px !important;
       border-radius: 50% !important;
@@ -350,6 +345,37 @@
       color: #fff !important;
    }
 
+
+   /* quotes boxes */
+   section.quotes{
+      margin-top: 1.4rem;
+   }
+
+   .quotes-box{
+      word-wrap: break-word;
+      width: 75%;
+      font-style: italic;
+   }
+
+   .quotes-box p{
+      position: relative;
+   }
+
+   .quotes-box p::before{
+      content: open-quote;
+   }
+
+   .quotes-box p::after{
+      content: close-quote;
+   }
+
+   section.quotes .owl-nav{
+      display: none;
+   }
+
+   section.quotes .owl-dots{
+      display: none;
+   }
    
    /* card maps styling */
    .card-maps .card-body{
