@@ -509,10 +509,40 @@ ul.footer-list li a:hover{
 
 /* Halaman fasilitas */
 
-.fasilitas-image{
-   min-height: 300px;
-   background-size: cover;
-   background-position: center;
+.facility-container{
+   background-color: #E3E3E3;
+}
+
+
+
+@media screen and (min-width: 992px){
+   .facility-container{
+      position: relative;
+   }
+
+   .fasilitas-image{
+       position: absolute;
+       background-size: cover;
+       background-position: center;
+       top: 0;
+       left: -30px;
+       right: 0;
+       height: 80%;
+       margin-top: 30px;
+   }
+
+   .order-lg-2 .fasilitas-image {
+       right: -30px;
+       left: 0px;
+   }
+}
+
+@media screen and (max-width: 991px){
+   .fasilitas-image{
+       background-size: cover;
+       background-position: center;
+       height: 300px;
+   }    
 }
 
 .caption-fasilitas{
