@@ -23,7 +23,6 @@
 </head>
 <body class="overflow-x-hidden">
 
-
    <div class="menu-wrapper hide">
 		<div class="navbar-ul-wrap">
 				<div class="wrapper-ul d-none">
@@ -33,10 +32,18 @@
 					</div>
 					<div class="link-nav">
 							<a class="nav-link" href="index.html">BERANDA</a> 
-							<a class="nav-link" href="fasilitas.html">FASILITAS</a> 
+                     <a class="nav-link" id="nav-toggle" href="fasilitas.html">FASILITAS</a> 
+                     <div id="nav-collapse">
+                        <ul class="toggle-hide">
+                           <li><a href="#">Menu 1</a></li>
+                           <li><a href="#">Menu 2</a></li>
+                           <li><a href="#">Menu 3</a></li>
+                        </ul>
+                     </div>
 							<a class="nav-link" href="gallery.html">SITUS WISATA</a> 
-							<a class="nav-link" href="tentang.html">TENTANG KAMI</a>   
-							<a class="nav-link" href="#">FAQ</a>    
+							<a class="nav-link" href="tentang.html">TENTANG KAMI</a> 
+                     <a class="nav-link" href="#">KONTAK</a>     
+							<a class="nav-link" href="#">BLOG & INFO</a>    
 					</div>
 	
 				</div>
@@ -50,19 +57,18 @@
 
 <div class="container-fluid">
    <div class="row">
+
       <div class="jumbotron custom-jumbotron hero rounded-0 vh-100" style="background: url('image/hero.png'); background-size: cover; background-repeat: no-repeat; background-position: bottom center; background-attachment: fixed;" >
          <div class="jumbotron-overlay justify-content-center">
             <div class="wrapper align-self-center text-center">
-
                <span class="uba"><i class="uba-icon uba-logo text-brown uba-screen"></i></span>
                <h3 class="jumbo-title text-brown text-center">TRAVELUBA</h3>
                <h5 class="jumbo-text text-white">Jelajahi berbagai destinasi wisata menarik, bersama kami</h5>
-
                <button class="btn bg-brown p-2 radius-25">Pesan Sekarang</button>
-               
             </div>
          </div>
       </div>
+
    </div>
 </div>
 
@@ -319,6 +325,11 @@
        $('.wrapper-ul').toggleClass('d-none');
        $('body').toggleClass('overflow-hidden')
     })
+
+    $('#nav-toggle').on('click', function (event) {
+       event.preventDefault();
+       $('#nav-collapse ul').toggleClass('toggle-hide');
+    });
 
 
   })

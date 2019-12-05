@@ -1,0 +1,78 @@
+  /* Jumbotron Styling */
+  .jumbotron{
+   background-color: transparent;
+   }
+
+   .jumbotron.hero{
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-position: bottom center;
+      background-size: cover;
+   }  
+   .custom-jumbotron{
+      padding: 0;
+      margin: 0;
+   } 
+   .wrapper{
+      z-index: 5;
+   }
+   .jumbotron-overlay{
+      background-color: rgba(0, 0, 0, 0.329);
+      height: 100vh;
+      display: flex;
+      position: relative;
+      .wrapper{
+         @media screen and (min-width: 992px){
+            h5.jumbo-text{
+               font-size: 1.7rem;
+            }               
+         }
+
+      }
+      &::after {
+         content: "";
+         background: #a28020;
+         left: 0;
+         right: -40px;
+         margin-left: auto;
+         bottom: -41px;
+         width: 70%;
+         position: absolute;
+         height: 41px;
+         transform: skewX(-51deg);
+      }
+   }
+
+
+
+   .uba-icon.uba-logo.uba-screen{
+      font-size: 4rem;
+   }
+
+   .text-brown{
+      color: #E2BA52;
+   }
+
+   .bg-brown{
+      background-color: rgb(196, 153, 44);
+      color: white
+   }
+
+   h3.text-brown{
+      border-bottom: 1px solid #e2ba52;
+      padding-bottom: 5px;
+   }
+
+   button.btn.bg-brown.p-2.radius-25 {
+      margin-top: 4rem;
+      color: #e2ba52;
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+      background: transparent;
+      border: 2px solid #e2ba52;
+      &:hover{
+         color: white;
+         border: 2px solid #fff;
+      }
+   }

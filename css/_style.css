@@ -1,0 +1,563 @@
+@import url("_desktop.css"); 
+@import url("_mobile.css"); 
+
+   body{
+      background: #ECECEC;
+      font-family: 'Source Sans Pro', sans-serif;
+   }
+   
+   .card{
+      border-radius: 0px !important;
+      border: 0px;
+   }
+  
+   .radius-25{
+      border-radius: 25px;
+   }
+
+   .overflow-x-hidden{
+      overflow-x: hidden;
+   }
+
+   .mt-7{
+      margin-top: 7rem;
+   }
+
+   .fa-fw {
+      text-align: center;
+      width: 1.25em;
+   }
+
+   nav.navbar{
+      transition: .5s all;
+   }
+
+   .bg-transparent{
+      color: white !important;
+      background-color: transparent !important;
+   }
+
+   .vh-100{
+      height: 100vh;
+   }
+
+   .logo-nav .uba-icon.uba-logo{
+      font-size: 4rem;
+      color: white;
+   }
+
+   a.navbar-brand .uba-icon.uba-logo{
+      font-size: 3rem;
+   }
+
+   .nav-transparent{
+      background-color: transparent !important;
+   }
+
+   .menu-wrapper{
+      position: fixed;
+      width: 250px;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.973);
+      z-index: 9999;
+      animation: slide 0.5s forwards;
+      animation-delay: 2s;
+      transition: .4s all;
+      
+   }
+
+   @keyframes menu-wrapper{
+      100% { left: 0; }
+   }
+
+   .menu-wrapper.hide{
+      width: 0px;
+      transition: .4s all;
+   }
+
+   .menu-wrapper .wrapper-ul a.nav-link{
+      color: rgb(226, 225, 225);
+      font-weight: 700;
+      position: relative;
+      transition: .5s all;
+   }
+
+   .menu-wrapper .wrapper-ul a.nav-link:hover,
+   .menu-wrapper .wrapper-ul a.nav-link:focus{
+      transform: translate(20px, 0px);
+   }
+
+   .menu-wrapper .wrapper-ul a.nav-link:hover::after,
+   .menu-wrapper .wrapper-ul a.nav-link:focus::after{
+       background-color: #fff;
+       width: 50%;
+       position: absolute;
+       bottom: 14px;
+       height: 2px;
+       left: 17px;
+       right: 0;
+       content: "";
+   }
+
+   .navbar-ul-wrap {
+      position: relative;
+   }
+
+   .wrapper-ul .link-nav{
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+   }
+
+   button.btn-menu-nav {
+      color: white;
+      font-weight: 700;
+      background-color: tomato;
+      border-radius: 0px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1.3rem;
+   }
+
+/* Navbar CSS */
+   nav.col.navbar.navbar-expand-lg.navbar-light.bg-light {
+      z-index: 9;
+      transition: .4s ease-in-out;
+   }
+
+   ul.nav.navbar-nav li.nav-item a.nav-link{
+      color: white;
+   }
+
+   ul.nav.navbar-nav li.nav-item{
+      padding: 0.6rem;
+   }
+
+   .wrapper-ul .link-nav a.nav-link {
+      padding-top: 1.4rem;
+      padding-bottom: 1.4rem;
+   }
+
+   .nav-hide{
+      top: -60px !important;
+   }
+
+   .nav-show{
+      top: 0px !important;
+   }
+
+
+   /* Jumbotron Styling */
+   .jumbotron{
+      background-color: transparent;
+   }
+
+   .jumbotron.hero{
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-position: bottom center;
+      background-size: cover;
+   }
+
+   .custom-jumbotron{
+      padding: 0;
+      margin: 0;
+   }
+
+   .jumbotron-overlay{
+      background-color: rgba(0, 0, 0, 0.329);
+      height: 100vh;
+      display: flex;
+      position: relative;
+   }
+
+   .jumbotron-overlay::after {
+      content: "";
+      background: #a28020;
+      left: 0;
+      right: -40px;
+      margin-left: auto;
+      bottom: -41px;
+      width: 70%;
+      position: absolute;
+      height: 41px;
+      transform: skewX(-51deg);
+   }
+
+   .jumbotron .wrapper{
+      z-index: 5;
+   }
+
+   .uba-icon.uba-logo.uba-screen{
+      font-size: 4rem;
+   }
+
+   .text-brown{
+      color: #E2BA52;
+   }
+
+   .bg-brown{
+      background-color: rgb(196, 153, 44);
+      color: white
+   }
+
+   h3.text-brown{
+    border-bottom: 1px solid #e2ba52;
+    padding-bottom: 5px;
+   }
+
+   button.btn.bg-brown.p-2.radius-25 {
+      margin-top: 4rem;
+      color: #e2ba52;
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+      background: transparent;
+      border: 2px solid #e2ba52;
+  }
+
+  button.btn.bg-brown.p-2.radius-25:hover{
+   color: white;
+   border: 2px solid #fff;
+  }
+
+   /* card intro style */
+   .img-top{
+    background-size: cover !important;
+    height: 300px;
+   }
+
+   .img-btm{
+    height: 300px;
+   }
+
+   .card-first{
+      min-height: 300px; 
+      box-shadow: 0px 0px 2px 2px #c1c1c1;
+      transition: .3s all ease-in-out;
+    }
+
+   .card-first:hover{
+      box-shadow: 0px 0px 0px 0px white;
+   }
+
+   .card-height{
+     min-height: 300px; 
+     box-shadow: 0px 0px 2px 2px #c1c1c1;
+     transition: .3s all ease-in-out;
+   }
+
+   .card-height:hover{
+      box-shadow: 0px 0px 0px 0px white;
+   }
+
+   .order-first{
+      order: 1;
+   }
+
+   .order-last{
+      order: 3;
+   }
+
+   /* explain card */
+   .explain-card{
+      border-radius: 0px;
+   }
+
+   .explain-card{
+      background-size: cover  ;
+      background-position: center;
+   }
+   
+   .explain-card .card-body .box-text{
+      padding-top: 3.2rem;
+      padding-bottom: 3.2rem;
+   }
+
+   .explain-card .overlay.opacity-50{
+      background-color: rgba(0, 0, 0, 0.486);
+      position: relative;
+   }
+
+   .explain-card .overlay::before {
+      content: "";
+      width: 70%;
+      height: 40px;
+      left: -25px;
+      right: 0;
+      top: -40px;
+      background-color: #c18c2b;
+      position: absolute;
+      transform: skewX(-51deg);
+   }
+
+   .card.card-how .card-header h4{
+      line-height: 2.3;
+   }
+
+
+
+
+   /* carousel owl styling */
+
+   section.carousel-slide .card-how .card-header{
+      border-radius: 0px;
+   }
+   .card-header {
+      width: 80%;
+      margin: 0 auto;
+      border: none;
+      background: #ffffff;
+      height: 80px;
+      margin-top: -40px;
+      border-radius: 0px;
+     }
+
+   .img-carousel {
+      height: 250px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-size: cover !important;
+      background-position: center !important;
+      display: flex;
+   }
+
+   span.span-owl.bg-light.p-3 {
+      margin-bottom: -16px !important;
+      align-self: flex-end;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      background: #000000c9 !important;
+      color: white;
+   }
+
+   .owl-carousel .owl-nav button.owl-prev{
+      padding: 20px !important;
+      border-radius: 50% !important;
+      background-color: black !important;
+      color: #fff !important;
+   }
+
+   .owl-carousel .owl-nav button.owl-next{
+      padding: 20px !important;
+      border-radius: 50% !important;
+      background-color: black !important;
+      color: #fff !important;
+   }
+
+
+   /* quotes boxes */
+   section.quotes{
+      margin-top: 1.4rem;
+   }
+
+   .quotes-box{
+      word-wrap: break-word;
+      width: 75%;
+      font-style: italic;
+   }
+
+   .quotes-box p{
+      position: relative;
+   }
+
+   .quotes-box p::before{
+      content: open-quote;
+   }
+
+   .quotes-box p::after{
+      content: close-quote;
+   }
+
+   section.quotes .owl-nav{
+      display: none;
+   }
+
+   section.quotes .owl-dots{
+      display: none;
+   }
+   
+   /* card maps styling */
+   .card-maps .card-body{
+      padding: 0 !important;
+   }
+
+   .maps-img{
+      background-size: cover !important;
+      background-position: bottom !important;
+      height: 400px;
+   }
+
+   .card-maps .text-box ul{
+      list-style: none;
+      padding-inline-start: 0px;
+   }
+
+   .text-box li {
+      background: #828484;
+      margin: 9px;
+      padding: 8px;
+      color: #fff !important;
+      border-radius: 4px;
+      overflow: hidden;
+  }
+
+  .text-box li a{
+     color: #fff;
+  }
+
+
+
+  /* Halaman Gallery */
+  .card-situs{
+   padding: 0px;
+   }
+
+   .img-site{
+   min-height: 200px;
+   background-size: cover !important;
+   background-position: center;
+   transition: .5s all;
+   }
+
+.img-site:hover{
+
+overflow: hidden;
+}
+
+.z-index-2{
+z-index: 2;
+}
+
+.z-index-0{
+z-index: 0;
+}
+
+.border-situs{
+border: 2px solid white;
+padding: 10px;
+    color: white;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.border-situs:hover{
+   transform: scale(1.05);
+}
+.situs-wwrapper{
+   overflow: hidden !important;
+}
+
+.overlay{
+background-color: rgba(0, 0, 0, 0.63);
+    height: 100%;
+    transition: .4s all;
+}
+.overlay:hover{
+   background-color: transparent;
+}
+
+.m-width{
+   max-width: 80% !important;
+}
+
+.banner-situs {
+   min-height: 350px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.banner-situs h3{
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.text-banner h4{
+   margin-top: 1.25rem;
+   margin-bottom: 1.25rem;
+   font-weight: 600;
+   text-align: center;
+}
+
+/* footer */
+.footer-logo .uba-icon{
+   font-size: 1.6rem;
+}
+
+ul.footer-list{
+   padding-inline-start: 5px;
+   margin-bottom: 0px;
+}
+ul.footer-list li{
+   list-style: none;
+   padding-left: 8px;
+   padding-right: 8px;
+   display: inline-block;
+}
+ul.footer-list li a{
+   text-decoration: none;
+   color: grey;
+}
+
+
+ul.footer-list li a:hover{
+   color: rgb(223, 223, 223);
+}
+
+
+
+/* Halaman fasilitas */
+
+
+
+@media screen and (min-width: 992px){
+   .facility-container{
+      background-color: #E3E3E3;
+      position: relative;
+   }
+
+   .fasilitas-image{
+       position: absolute;
+       background-size: cover;
+       background-position: center;
+       top: 0;
+       left: -30px;
+       right: 0;
+       height: 80%;
+       margin-top: 30px;
+   }
+
+   .order-lg-2 .fasilitas-image {
+       right: -30px;
+       left: 0px;
+   }
+}
+
+@media screen and (max-width: 991px){
+   .facility-container{
+      background-color: #fff;
+      position: relative;
+   }
+   .fasilitas-image::before {
+       content: "";
+       background: linear-gradient(to bottom, rgba(237, 237, 237, 0) 0%, rgba(246, 246, 246, 0) 35%, rgba(255, 255, 255, 0.73) 100%);
+       height: 100%;
+       width: 100%;
+       position: absolute;
+   }
+   .fasilitas-image{
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    top: -34px;
+    position: relative;
+   }    
+}
+
+.caption-fasilitas{
+   background: #fff;
+   padding: 1.4rem;
+}

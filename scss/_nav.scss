@@ -1,0 +1,122 @@
+
+   nav.navbar{
+      transition: .5s all;
+   }
+
+   .logo-nav .uba-icon.uba-logo{
+      font-size: 4rem;
+      color: white;
+   }
+
+   a.navbar-brand .uba-icon.uba-logo{
+      font-size: 3rem;
+   }
+
+   .nav-transparent{
+      background-color: transparent !important;
+   }
+
+   .menu-wrapper{
+      position: fixed;
+      width: 250px;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.973);
+      z-index: 9999;
+      animation: slide 0.5s forwards;
+      animation-delay: 2s;
+      transition: .4s all;
+      .wrapper-ul{
+         .link-nav{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+         }
+         a.nav-link{
+            color: rgb(226, 225, 225);
+            font-weight: 700;
+            position: relative;
+            padding-top: 1.4rem;
+            padding-bottom: 1.4rem;
+            transition: .5s all;
+            &:hover,
+            &:focus{
+               transform: translate(20px, 0px);
+            }
+            &:hover::after,
+            &:focus::after{
+               background-color: #fff;
+               width: 50%;
+               position: absolute;
+               bottom: 14px;
+               height: 2px;
+               left: 17px;
+               right: 0;
+               content: "";
+            } 
+         } 
+      }
+   }
+
+   #nav-collapse{
+      ul{
+         list-style-type: none;
+         li{
+            a{
+               display: block;
+               color: white;
+               padding-top: .8rem;
+               padding-bottom: .8rem;
+               text-decoration: none; 
+               animation: slide 0.5s forwards;
+               transition: .4s all;
+               &:hover,
+               &:focus{
+                  transform: translate(20px, 0px);
+               }
+            }
+         }
+      }
+      .toggle-hide{
+         display: none !important;
+      }
+   }
+
+
+   .menu-wrapper.hide{
+      width: 0px;
+      transition: .4s all;
+   }
+
+   /* Navbar CSS */
+   nav.col.navbar.navbar-expand-lg.navbar-light.bg-light {
+      z-index: 9;
+      transition: .4s ease-in-out;
+   }
+
+   ul.nav.navbar-nav li.nav-item{
+      padding: 0.6rem;
+      a.nav-link{
+         color: white;
+      }
+   }
+
+   .navbar-ul-wrap {
+      position: relative;
+   }
+
+   button.btn-menu-nav {
+      color: white;
+      font-weight: 700;
+      background-color: tomato;
+      border-radius: 0px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1.3rem;
+   }
+
+   .nav-hide{
+      top: -60px !important;
+   }
+
+   .nav-show{
+      top: 0px !important;
+   }

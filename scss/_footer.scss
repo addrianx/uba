@@ -1,0 +1,22 @@
+/* footer */
+.footer-logo .uba-icon{
+   font-size: 1.6rem;
+}
+
+ul.footer-list{
+   padding-inline-start: 5px;
+   margin-bottom: 0px;
+   li{
+      list-style: none;
+      padding-left: 8px;
+      padding-right: 8px;
+      display: inline-block;
+   }
+   a{
+      text-decoration: none;
+      color: grey;
+   }
+   &:hover{
+      color: rgb(223, 223, 223);
+   }
+}
