@@ -7,10 +7,10 @@
    <title>UBA travel|Beranda</title>
    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="vendor/uba-icon/style.css">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
    <link rel="stylesheet" href="vendor/owlcarosel/assets/owl.theme.default.css">
    <link rel="stylesheet" href="vendor/owlcarosel/assets/owl.carousel.css">
-   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
+   <link rel="stylesheet" href="vendor/fontawesome-5.6/css/all.css">
    <link rel="stylesheet" href="css/style.css">
 
 
@@ -18,7 +18,7 @@
    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
-   <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+   <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"/>
 
 </head>
 <body class="overflow-x-hidden">
@@ -31,7 +31,7 @@
 							<i class="uba-icon uba-logo"></i>
 					</div>
 					<div class="link-nav">
-							<a class="nav-link" href="index.html">BERANDA</a> 
+							<a class="nav-link" href="index.html">BERANDA</a>
                      <a class="nav-link" id="nav-toggle" href="fasilitas.html">FASILITAS</a> 
                      <div id="nav-collapse">
                         <ul class="toggle-hide">
@@ -42,7 +42,7 @@
                      </div>
 							<a class="nav-link" href="gallery.html">SITUS WISATA</a> 
 							<a class="nav-link" href="tentang.html">TENTANG KAMI</a> 
-                     <a class="nav-link" href="#">KONTAK</a>     
+                     <a class="nav-link" href="contact.html">KONTAK</a>     
 							<a class="nav-link" href="#">BLOG & INFO</a>    
 					</div>
 	
@@ -52,7 +52,7 @@
 	
 	<nav class="navbar navbar-light bg-light fixed-top nav-transparent">
 		<a class="navbar-brand " href="#"><i class="text-brown uba-icon uba-logo"></i></a>
-		<button class="btn btn-menu-nav"><i class="fa fa-bars"></i></button>
+		<button class="btn btn-menu-nav"><i class="fas fa-bars"></i></button>
 	</nav>
 
 <div class="container-fluid">
@@ -206,13 +206,13 @@
                               <h3>PT UWAIS BERKAH ABADI</h3>
                               <ul>
                                  <li>
-                                    <i class="fa fa-map-marker fa-fw"></i> <a href="https://www.google.com/maps/@-7.2321875,107.9000463,18.5z" target="_blank" rel="noopener noreferrer">Permata Karisma Blok B1 Muara Sanding Garut</a> 
+                                    <i class="fas fa-map-marker fa-fw"></i> <a href="https://www.google.com/maps/@-7.2321875,107.9000463,18.5z" target="_blank" rel="noopener noreferrer">Permata Karisma Blok B1 Muara Sanding Garut</a> 
                                  </li>
                                  <li>
-                                    <i class="fa fa-phone-square fa-fw"></i> <a href="tel:02622807333">(0262)-2807333</a> 
+                                    <i class="fas fa-phone-square fa-fw"></i> <a href="tel:02622807333">(0262)-2807333</a> 
                                  </li>
                                  <li>
-                                    <i class="fa fa-envelope-open fa-fw"></i> <a href="mailto:pt.uwaisberkahabadi@gmail.com">pt.uwaisberkahabadi@gmail.com</a> 
+                                    <i class="fas fa-envelope-open fa-fw"></i> <a href="mailto:pt.uwaisberkahabadi@gmail.com">pt.uwaisberkahabadi@gmail.com</a> 
                                  </li>
                               </ul>
                            </div>
@@ -260,9 +260,9 @@
    </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+<script src="vendor/bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script> 
 <script src="vendor/parallax.js/parallax.js"></script>
 <script src="vendor/owlcarosel/owl.carousel.js"></script>
 
@@ -273,13 +273,25 @@
 
 
 		$(window).scroll(function(){
-      var wScroll = $(window).scrollTop()
-      if(wScroll > 80){
-         $('nav').removeClass('nav-transparent');
-      }else{
-         $('nav').addClass('nav-transparent');
-      }
-    })
+         var wScroll = $(window).scrollTop()
+         if(wScroll > 80){
+            $('nav').removeClass('nav-transparent');
+         }else{
+            $('nav').addClass('nav-transparent');
+         }
+      })
+
+          
+      $('.btn-menu-nav').on('click', function(){
+         $('.menu-wrapper').toggleClass('hide');
+         $('.wrapper-ul').toggleClass('d-none');
+         $('body').toggleClass('overflow-hidden')
+      })
+
+      $('#nav-toggle').on('click', function (event) {
+         event.preventDefault();
+         $('#nav-collapse ul').toggleClass('toggle-hide');
+      });
 
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -319,17 +331,7 @@
       }
     })
     
-    
-    $('.btn-menu-nav').on('click', function(){
-       $('.menu-wrapper').toggleClass('hide');
-       $('.wrapper-ul').toggleClass('d-none');
-       $('body').toggleClass('overflow-hidden')
-    })
 
-    $('#nav-toggle').on('click', function (event) {
-       event.preventDefault();
-       $('#nav-collapse ul').toggleClass('toggle-hide');
-    });
 
 
   })

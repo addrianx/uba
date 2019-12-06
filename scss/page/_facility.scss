@@ -1,25 +1,43 @@
 /* Halaman fasilitas */
 
 .caption-fasilitas{
-   background: #fff;
    padding: 1.4rem;
 }
 
 @media screen and (min-width: 992px){
-   .facility-container{
-      background-color: #E3E3E3;
+      .facility-container{
       position: relative;
+      height: 100%;
+      background: #fff;
+      margin-top: 60px;
+      border-radius: 25px;
+      overflow: hidden;
+      &::before{
+         position: absolute;
+         display: block;
+         content: "";
+         background: url(../image/wrap.png);
+         height: 180px;
+         width: 100%;
+         left: 0;
+         top: 55%;
+         left: 0;
+         right: 0;
+         bottom: 0;
+      }
    }
 
    .fasilitas-image{
-       position: absolute;
-       background-size: cover;
-       background-position: center;
-       top: 0;
-       left: -30px;
-       right: 0;
-       height: 80%;
-       margin-top: 30px;
+      background-size: cover;
+      background-position: center;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 300px;
+      box-shadow: 3px 8px 14px 5px #0000007a;
+       //margin-top: 30px;
    }
 
    .order-lg-2 .fasilitas-image {
@@ -30,15 +48,32 @@
 
 @media screen and (max-width: 991px){
    .facility-container{
-      background-color: #fff;
       position: relative;
+      height: 100%;
+      background: #fff;
+      margin-top: 60px;
+      border-radius: 25px;
+      overflow: hidden;
+      &::before{
+         position: absolute;
+         display: block;
+         content: "";
+         background: url(../image/wrap.png);
+         height: 180px;
+         width: 100%;
+         left: 0;
+         top: 75%;
+         left: 0;
+         right: 0;
+         bottom: 0;
+      }
    }
 
    .fasilitas-image{
     background-size: cover;
     background-position: center;
     height: 300px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     top: -34px;
     position: relative;
@@ -51,7 +86,28 @@
       }
    }    
 
-
 }
 
+
+.imagez{
+   position: relative;
+   height: 400px;
+   background: #fff;
+   margin-top: 60px;
+   border-radius: 25px;
+   overflow: hidden;
+   &::before{
+         position: absolute;
+         display: block;
+         content: "";
+         background: url(../image/wrap.png);
+         height: 180px;
+         width: 100%;
+         left: 0;
+         top: 55%;
+         left: 0;
+         right: 0;
+         bottom: 0;
+   }
+}
 

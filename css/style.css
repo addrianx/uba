@@ -88,6 +88,9 @@ a.navbar-brand .uba-icon.uba-logo {
   content: "";
 }
 
+#nav-collapse {
+  transition: 0.4s all;
+}
 #nav-collapse ul {
   list-style-type: none;
 }
@@ -234,30 +237,22 @@ button.btn.bg-brown.p-2.radius-25:hover {
   height: 300px;
 }
 
-.order-first {
-  order: 1;
-}
-
-.order-last {
-  order: 3;
-}
-
 .card-first {
   min-height: 300px;
-  box-shadow: 0px 0px 2px 2px #c1c1c1;
+  box-shadow: 0px 15px 7px 7px #c1c1c1;
   transition: 0.3s all ease-in-out;
-}
-.card-first:hover {
-  box-shadow: 0px 0px 0px 0px white;
 }
 
 .card-height {
   min-height: 300px;
-  box-shadow: 0px 0px 2px 2px #c1c1c1;
+  box-shadow: 0px 15px 7px 7px #c1c1c1;
   transition: 0.3s all ease-in-out;
 }
-.card-height:hover {
-  box-shadow: 0px 0px 0px 0px white;
+.card-height .order-first {
+  order: 1;
+}
+.card-height .order-last {
+  order: 3;
 }
 
 /* explain card */
@@ -458,25 +453,42 @@ section.quotes .owl-dots {
 
 /* Halaman fasilitas */
 .caption-fasilitas {
-  background: #fff;
   padding: 1.4rem;
 }
 
 @media screen and (min-width: 992px) {
   .facility-container {
-    background-color: #E3E3E3;
     position: relative;
+    height: 100%;
+    background: #fff;
+    margin-top: 60px;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .facility-container::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url(../image/wrap.png);
+    height: 180px;
+    width: 100%;
+    left: 0;
+    top: 55%;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
   .fasilitas-image {
-    position: absolute;
     background-size: cover;
     background-position: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
     top: 0;
-    left: -30px;
+    left: 0;
     right: 0;
-    height: 80%;
-    margin-top: 30px;
+    height: 300px;
+    box-shadow: 3px 8px 14px 5px #0000007a;
   }
 
   .order-lg-2 .fasilitas-image {
@@ -486,15 +498,32 @@ section.quotes .owl-dots {
 }
 @media screen and (max-width: 991px) {
   .facility-container {
-    background-color: #fff;
     position: relative;
+    height: 100%;
+    background: #fff;
+    margin-top: 60px;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .facility-container::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url(../image/wrap.png);
+    height: 180px;
+    width: 100%;
+    left: 0;
+    top: 75%;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
   .fasilitas-image {
     background-size: cover;
     background-position: center;
     height: 300px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     top: -34px;
     position: relative;
@@ -507,6 +536,28 @@ section.quotes .owl-dots {
     position: absolute;
   }
 }
+.imagez {
+  position: relative;
+  height: 400px;
+  background: #fff;
+  margin-top: 60px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.imagez::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url(../image/wrap.png);
+  height: 180px;
+  width: 100%;
+  left: 0;
+  top: 55%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 /* footer */
 .footer-logo .uba-icon {
   font-size: 1.6rem;
