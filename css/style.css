@@ -25,6 +25,9 @@ body {
   width: 1.25em;
 }
 
+.form-control {
+  border-radius: 0px;
+}
 @media screen and (min-width: 992px) {
   .hidden-lg {
     display: none;
@@ -420,7 +423,7 @@ section.quotes .owl-dots {
   transform: scale(1.05);
 }
 
-.situs-wwrapper {
+.situs-wrapper {
   overflow: hidden !important;
 }
 
@@ -442,6 +445,8 @@ section.quotes .owl-dots {
 .banner-situs h3 {
   text-transform: uppercase;
   font-weight: 700;
+  background: #4bb5abd1;
+  padding: 0.5rem;
 }
 
 .text-banner h4 {
