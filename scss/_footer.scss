@@ -1,20 +1,27 @@
 /* footer */
-.footer-logo .uba-icon{
-   font-size: 1.6rem;
-}
+
+.footer-logo{
+   .uba-icon{
+      font-size: 1.6rem;
+   }
+   span.footer-logo-title{
+     font-size: 1.6rem; 
+   } 
+} 
 
 ul.footer-list{
    padding-inline-start: 5px;
    margin-bottom: 0px;
    li{
       list-style: none;
-      padding-left: 8px;
-      padding-right: 8px;
+      padding-left: 2px;
+      padding-right: 2px;
       display: inline-block;
    }
    a{
       text-decoration: none;
       color: grey;
+      font-size: .9rem;
    }
    &:hover{
       color: rgb(223, 223, 223);

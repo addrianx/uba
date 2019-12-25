@@ -619,6 +619,7 @@ ul.footer-list li {
   padding-left: 8px;
   padding-right: 8px;
   display: inline-block;
+  font-size: 0.9rem;
 }
 ul.footer-list a {
   text-decoration: none;
