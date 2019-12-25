@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>UBA travel|Beranda</title>
-   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="vendor/uba-icon/style.css">
    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
    <link rel="stylesheet" href="vendor/owlcarosel/assets/owl.theme.default.css">
@@ -18,230 +19,280 @@
    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
-   <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"/>
+   <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+   <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
 
 </head>
+
 <body class="overflow-x-hidden">
 
    <div class="menu-wrapper hide">
-		<div class="navbar-ul-wrap">
-				<div class="wrapper-ul d-none">
-	
-					<div class="logo-nav text-center py-2">
-							<i class="uba-icon uba-logo"></i>
-					</div>
-					<div class="link-nav">
-							<a class="nav-link" href="index.html">BERANDA</a>
-                     <a class="nav-link" id="nav-toggle" href="fasilitas.html">FASILITAS</a> 
-                     <div id="nav-collapse">
-                        <ul class="toggle-hide">
-                           <li><a href="#">Menu 1</a></li>
-                           <li><a href="#">Menu 2</a></li>
-                           <li><a href="#">Menu 3</a></li>
-                        </ul>
-                     </div>
-							<a class="nav-link" href="gallery.html">SITUS WISATA</a> 
-							<a class="nav-link" href="tentang.html">TENTANG KAMI</a> 
-                     <a class="nav-link" href="contact.html">KONTAK</a>     
-							<a class="nav-link" href="#">BLOG & INFO</a>    
-					</div>
-	
-				</div>
-		</div>
-	</div>   
-	
-	<nav class="navbar navbar-light bg-light fixed-top nav-transparent">
-		<a class="navbar-brand " href="#"><i class="text-brown uba-icon uba-logo"></i></a>
-		<button class="btn btn-menu-nav"><i class="fas fa-bars"></i></button>
-	</nav>
+      <div class="navbar-ul-wrap">
+         <div class="wrapper-ul d-none">
 
-<div class="container-fluid">
-   <div class="row">
-
-      <div class="jumbotron custom-jumbotron hero rounded-0 vh-100" style="background: url('image/hero.png'); background-size: cover; background-repeat: no-repeat; background-position: bottom center; background-attachment: fixed;" >
-         <div class="jumbotron-overlay justify-content-center">
-            <div class="wrapper align-self-center text-center">
-               <span class="uba"><i class="uba-icon uba-logo text-brown uba-screen"></i></span>
-               <h3 class="jumbo-title text-brown text-center">TRAVELUBA</h3>
-               <h5 class="jumbo-text text-white">Jelajahi berbagai destinasi wisata menarik, bersama kami</h5>
-               <button class="btn bg-brown p-2 radius-25">Pesan Sekarang</button>
+            <div class="logo-nav text-center py-2">
+               <i class="uba-icon uba-logo"></i>
             </div>
+            <div class="link-nav">
+               <a class="nav-link" href="index.html">BERANDA</a>
+               <!-- <a class="nav-link" id="nav-toggle">FASILITAS</a>
+               <div id="nav-collapse">
+                  <ul class="toggle-hide">
+                     <li><a href="#">Menu 1</a></li>
+                     <li><a href="#">Menu 2</a></li>
+                     <li><a href="#">Menu 3</a></li>
+                  </ul>
+               </div> -->
+               <a class="nav-link" href="fasilitas.html">FASILITAS</a>
+               <a class="nav-link" href="gallery.html">SITUS WISATA</a>
+               <a class="nav-link" href="tentang.html">TENTANG KAMI</a>
+               <a class="nav-link" href="contact.html">KONTAK</a>
+               <a class="nav-link" href="#">BLOG & INFO</a>
+            </div>
+
          </div>
       </div>
-
    </div>
-</div>
 
+   <nav class="navbar navbar-light bg-light fixed-top nav-transparent">
+      <a class="navbar-brand " href="#"><i class="text-brown uba-icon uba-logo"></i></a>
+      <button class="btn btn-menu-nav"><i class="fas fa-bars"></i></button>
+   </nav>
 
-<section class="intro-image">
-   <div class="container">
+   <div class="container-fluid">
       <div class="row">
 
-         <div class="col-12 col-lg-10 offset-lg-1">
-            <div class="card mt-7 card-first rounded-4">
-               <div class="card-body p-0">
-                  <div class="row no-gutters">
-                     <div class="col-12 col-lg-5 img-top" style="background: url(image/data-1.png);"></div>
+         <div class="jumbotron custom-jumbotron hero rounded-0 vh-80"
+            style="background: url('image/hero.png'); background-size: cover; background-repeat: no-repeat; background-position: bottom center; background-attachment: fixed;">
+            <div class="jumbotron-overlay justify-content-center">
+               <div class="wrapper align-self-center text-center">
+                  <span class="uba"><i class="uba-icon uba-logo text-brown uba-screen"></i></span>
+                  <h3 class="jumbo-title text-brown text-center">TRAVELUBA</h3>
+                  <h5 class="jumbo-text text-white">Jelajahi berbagai destinasi wisata menarik, bersama kami</h5>
+                  <button class="btn bg-brown p-2 radius-25">Pesan Sekarang</button>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+
+   <section class="intro-image">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-12 col-lg-10 offset-lg-1">
+               <div class="card mt-7 card-first rounded-4">
+                  <div class="card-body p-0">
+                     <div class="row no-gutters">
+                        <div class="col-12 col-lg-5 img-top" style="background: url(image/data-1.png);"></div>
                         <div class="col-12 col-lg-7 d-flex align-items-center p-4">
                            <div class="box-text">
                               <h3>Pilih Destinasi Wisatamu.</h3>
-                              <p>Yogyakarta merupakan salah satu tujuan wisata terfavorit di indonesia menawarkan beraneka ragam tempat wisata yang menarik untuk dikujungi.</p>
+                              <p>Yogyakarta merupakan salah satu tujuan wisata terfavorit di indonesia menawarkan
+                                 beraneka ragam tempat wisata yang menarik untuk dikujungi.</p>
                            </div>
                         </div>
+                     </div>
                   </div>
                </div>
             </div>
+
+
+            <div class="col-12 col-lg-10 offset-lg-1">
+               <div class="card mt-5 card-height rounded-4">
+                  <div class="card-body p-0">
+                     <div class="row no-gutters">
+                        <div class="col-12 col-lg-5 order-lg-last img-btm" style="background: url(image/data-2.png);">
+                        </div>
+                        <div class="col-12 col-lg-7 d-flex order-lg-first align-items-center p-4">
+                           <div class="box-text">
+                              <h3>Beraneka Ragam Wisata.</h3>
+                              <p>Nikmati berbagai pesona khas wisata jogja mulai dari wisata belanja, wisata sejarah,
+                                 wisata pendidikan, wisata pantai, wisata gunung, wisata candi, museum, goa dan aneka
+                                 ragam lainnya.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
          </div>
+      </div>
+   </section>
 
-
-      <div class="col-12 col-lg-10 offset-lg-1">
-         <div class="card mt-5 card-height rounded-4">
-            <div class="card-body p-0">
-               <div class="row no-gutters">
-                  <div class="col-12 col-lg-5 order-last img-btm" style="background: url(image/data-2.png);"></div>
-                  <div class="col-12 col-lg-7 d-flex order-first align-items-center p-4">
-                     <div class="box-text">
-                        <h3>Beraneka Ragam Wisata.</h3>
-                        <p>Nikmati berbagai pesona khas wisata jogja mulai dari wisata belanja, wisata sejarah, wisata pendidikan, wisata pantai, wisata gunung, wisata candi, museum, goa dan aneka ragam lainnya.</p>
+   <section class="banner-wide">
+      <div class="container-fluid px-0">
+         <div class="row no-gutters">
+            <div class="col-12">
+               <div class="card mt-7 explain-card" style="background-image: url('image/room-hotel.jpg');">
+                  <div class="overlay opacity-50">
+                     <div class="card-body">
+                        <div class="box-text text-center">
+                           <h4 class="text-white jumbo-text">Jangan biarkan setiap momen pejalanan anda terlewat,
+                              percayakan perjalanan anda pada</h4>
+                           <h2 class="text-brown">TRAVELUBA</h2>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
+   </section>
 
-      </div>
-   </div>
-</section>
+   <section class="carousel-slide">
+      <div class="container-fluid px-0">
+         <div class="row no-gutters">
 
-<section class="banner-wide">
-   <div class="container-fluid px-0">
-      <div class="row no-gutters">
-         <div class="col-12">
-            <div class="card mt-7 explain-card" style="background-image: url('image/room-hotel.jpg');">
-               <div class="overlay opacity-50">
-                  <div class="card-body">
-                     <div class="box-text text-center">
-                        <h4 class="text-white jumbo-text">Jangan biarkan setiap momen pejalanan anda terlewat, percayakan perjalanan anda pada</h4>
-                        <h2 class="text-brown">TRAVELUBA</h2>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-
-<section class="carousel-slide">
-   <div class="container-fluid px-0">
-      <div class="row no-gutters">
-
-         <div class="col-12">
-            <div class="card card-how mt-7">
-               <div class="card-header">
+            <div class="col-12">
+               <div class="card card-how mt-7">
+                  <div class="card-header">
                      <h4 class="text-center">FASILITAS <span class="text-brown">Traveluba</span></h4>
-               </div>
-
-               <div class="card-body">
-                  <div class="owl-carousel">
-                     <div class="img-carousel" style="background: url('image/bus.jpg');"><span class="bg-light span-owl p-3">Transportasi Nyaman</span></div>
-                     <div class="img-carousel" style="background: url('image/hotel.jpg');"><span class="bg-light span-owl p-3">Hotel bintang 3</span></div>
-                     <div class="img-carousel" style="background: url('image/room-hotel.jpg');"><span class="bg-light span-owl p-3">Hotel bintang 3</span></div>
-                     <div class="img-carousel" style="background: url('image/asuransi.webp');"><span class="bg-light span-owl p-3">Asuransi</span></div>
-                     <div class="img-carousel" style="background: url('image/support.png');"><span class="bg-light span-owl p-3">Support 24jam</span></div>
                   </div>
-               </div>
 
-            </div>
-         </div>
-
-      </div>
-   </div>
-</section>
-
-
-
-<section class="quotes">
-   <div class="container px-0">
-      <div class="row d-flex justify-content-center">
-         
-         <div class="col-12 align-self-center">
-            <div class="card m-4 card-quotes">
-               <div class="card-body">
-                  <div class="owl-carousel text-center quotes">
-                     
-                     <div class="quotes-box">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus ducimus fugiat exercitationem fuga dicta cumque culpa nam non vel minus odit sunt, explicabo, architecto, at veniam? Provident, quibusdam dolorum!</p>
-                        <span>- Noname , Jakarta</span>
-                     </div>
-                     <div class="quotes-box">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem temporibus corrupti hic cumque adipisci numquam, reprehenderit voluptate ratione quos provident iure minus ea inventore alias porro quibusdam explicabo! Odit, obcaecati!</p>
-                        <span>- Noname , Garut</span>
-                     </div>
-                     <div class="quotes-box">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem temporibus corrupti hic cumque adipisci numquam, reprehenderit voluptate ratione quos provident iure minus ea inventore alias porro quibusdam explicabo! Odit, obcaecati!</p>
-                        <span>- Noname , Cirebon</span>
+                  <div class="card-body">
+                     <div class="owl-carousel">
+                        <div class="img-carousel" style="background: url('image/bus.jpg');"><span
+                              class="bg-light span-owl p-3">Transportasi Nyaman</span></div>
+                        <div class="img-carousel" style="background: url('image/hotel.jpg');"><span
+                              class="bg-light span-owl p-3">Hotel bintang 3</span></div>
+                        <div class="img-carousel" style="background: url('image/room-hotel.jpg');"><span
+                              class="bg-light span-owl p-3">Hotel bintang 3</span></div>
+                        <div class="img-carousel" style="background: url('image/asuransi.webp');"><span
+                              class="bg-light span-owl p-3">Asuransi</span></div>
+                        <div class="img-carousel" style="background: url('image/support.png');"><span
+                              class="bg-light span-owl p-3">Support 24jam</span></div>
                      </div>
                   </div>
+
                </div>
             </div>
+
          </div>
-
       </div>
-   </div>
-</section>
+   </section>
 
 
-<section class="maps-info">
-   <div class="container-fluid">
-      <div class="row no-gutters">
-         <div class="col-12 col-lg-12">
-            <div class="card card-maps mt-4">
-               <div class="card-body">
-                  <div class="row no-gutters">
-                     <div class="col-12 col-lg-6 maps-img" id="mapContainer"></div>
-                        <div class="col-12 col-lg-6 container-text d-flex justify-content-center align-items-center">
+
+   <section class="quotes">
+      <div class="container px-0">
+         <div class="row d-flex justify-content-center">
+
+            <div class="col-12 align-self-center">
+               <div class="card m-4 card-quotes">
+                  <div class="card-body">
+                     <div class="owl-carousel text-center quotes">
+
+                        <div class="quotes-box">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus ducimus
+                              fugiat exercitationem fuga dicta cumque culpa nam non vel minus odit sunt, explicabo,
+                              architecto, at veniam? Provident, quibusdam dolorum!</p>
+                           <span>- Noname , Jakarta</span>
+                        </div>
+                        <div class="quotes-box">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem temporibus corrupti hic
+                              cumque adipisci numquam, reprehenderit voluptate ratione quos provident iure minus ea
+                              inventore alias porro quibusdam explicabo! Odit, obcaecati!</p>
+                           <span>- Noname , Garut</span>
+                        </div>
+                        <div class="quotes-box">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem temporibus corrupti hic
+                              cumque adipisci numquam, reprehenderit voluptate ratione quos provident iure minus ea
+                              inventore alias porro quibusdam explicabo! Odit, obcaecati!</p>
+                           <span>- Noname , Cirebon</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+
+   <section class="maps-info">
+      <div class="container-fluid">
+         <div class="row no-gutters">
+            <div class="col-12 col-lg-12">
+               <div class="card card-maps mt-4">
+                  <div class="card-body">
+                     <div class="row no-gutters">
+                        <div class="col-12 col-lg-6 maps-img" id="mapContainer"></div>
+                        <div class="col-12 col-lg-6 container-text d-flex justify-content-start align-items-center">
                            <div class="text-box">
-                              <h3>PT UWAIS BERKAH ABADI</h3>
+                              <h3 class="text-center">PT UWAIS BERKAH ABADI</h3>
                               <ul>
                                  <li>
-                                    <i class="fas fa-map-marker fa-fw"></i> <a href="https://www.google.com/maps/@-7.2321875,107.9000463,18.5z" target="_blank" rel="noopener noreferrer">Permata Karisma Blok B1 Muara Sanding Garut</a> 
+                                    <i class="fas fa-map-marker fa-fw"></i> <a
+                                       href="https://www.google.com/maps/@-7.2321875,107.9000463,18.5z" target="_blank"
+                                       rel="noopener noreferrer">Permata Karisma Blok B1 Muara Sanding Garut</a>
                                  </li>
                                  <li>
-                                    <i class="fas fa-phone-square fa-fw"></i> <a href="tel:02622807333">(0262)-2807333</a> 
+                                    <i class="fas fa-phone-square fa-fw"></i> <a
+                                       href="tel:02622807333">(0262)-2807333</a>
                                  </li>
                                  <li>
-                                    <i class="fas fa-envelope-open fa-fw"></i> <a href="mailto:pt.uwaisberkahabadi@gmail.com">pt.uwaisberkahabadi@gmail.com</a> 
+                                    <i class="fas fa-envelope-open fa-fw"></i> <a
+                                       href="mailto:pt.uwaisberkahabadi@gmail.com">pt.uwaisberkahabadi@gmail.com</a>
                                  </li>
                               </ul>
                            </div>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>         
+            </div>
          </div>
       </div>
-   </div>
-</section>
+   </section>
 
+   <section class="info bg-dark d-none d-lg-block mt-7">
+      <div class="container">
+         <div class="row text-center text-white p-3">
+            <div class="col-12 col-lg-4">
+               <h4>Blog info</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aut amet explicabo ut porro
+                  assumenda aspernatur dolorum natus a reprehenderit praesentium repellat culpa, omnis ab mollitia rem
+                  dolore, officiis ipsa?</p>
+            </div>
+            <div class="col-12 col-lg-4">
+               <h4>Blog info</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi earum officiis reiciendis.
+                  Laudantium, reprehenderit. Laudantium nesciunt, accusamus obcaecati aliquam nobis nulla. Debitis
+                  laudantium perferendis alias dolores, porro facilis. Amet, obcaecati.</p>
+            </div>
+            <div class="col-12 col-lg-4">
+               <h4>Blog info</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi earum officiis reiciendis.
+                  Laudantium, reprehenderit. Laudantium nesciunt, accusamus obcaecati aliquam nobis nulla. Debitis
+                  laudantium perferendis alias dolores, porro facilis. Amet, obcaecati.</p>
+            </div>
+         </div>
+      </div>
+   </section>
 
-<footer id="footer">
-   <div class="container-fluid px-0">
-      <div class="row no-gutters">
-         <div class="col-12 mt-7">
-            <div class="card">
-               <div class="card-body h-100 bg-dark">
-                  <div class="row">
-                        
+   <footer id="footer">
+      <div class="container-fluid px-0">
+         <div class="row no-gutters">
+            <div class="col-12">
+               <div class="card">
+                  <div class="card-body h-100 bg-dark">
+                     <div class="row">
+
                         <div class="col-12 col-lg-4 d-flex justify-content-center">
                            <div class="footer-logo align-self-center">
-                              <i class="uba-icon uba-logo text-muted"><span class="footer-logo-title">Traveluba</span></i>
+                              <i class="uba-icon uba-logo text-muted"><span
+                                    class="footer-logo-title">Traveluba</span></i>
                            </div>
                         </div>
-                           
+
                         <div class="col-12 col-lg-4 d-flex justify-content-center">
-                           <span class="date-footer text-muted align-self-center">Copyright &copy; 2019 - PT Uwais Berkah Abadi</span>
+                           <span class="date-footer text-muted align-self-center">Copyright &copy; 2019 - PT Uwais
+                              Berkah Abadi</span>
                         </div>
 
                         <div class="col-12 col-lg-4 d-flex justify-content-center">
@@ -252,90 +303,94 @@
                            </ul>
                         </div>
 
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
-</footer>
+   </footer>
 
-<script src="vendor/bootstrap/js/jquery-3.3.1.min.js"></script>
-<script src="vendor/bootstrap/js/popper.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script> 
-<script src="vendor/parallax.js/parallax.js"></script>
-<script src="vendor/owlcarosel/owl.carousel.js"></script>
+   <script src="vendor/bootstrap/js/jquery-3.3.1.min.js"></script>
+   <script src="vendor/bootstrap/js/popper.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+   <script src="vendor/parallax.js/parallax.js"></script>
+   <script src="vendor/owlcarosel/owl.carousel.js"></script>
 
-<script>
+   <script>
 
-  $(document).ready(function() {
-   
+      $(document).ready(function () {
 
 
-		$(window).scroll(function(){
-         var wScroll = $(window).scrollTop()
-         if(wScroll > 80){
-            $('nav').removeClass('nav-transparent');
-         }else{
-            $('nav').addClass('nav-transparent');
-         }
+
+         $(window).scroll(function () {
+            var wScroll = $(window).scrollTop()
+            if (wScroll > 80) {
+               $('nav').removeClass('nav-transparent');
+            } else {
+               $('nav').addClass('nav-transparent');
+            }
+         })
+
+
+         $('.btn-menu-nav').on('click', function () {
+            $('.menu-wrapper').toggleClass('hide');
+            $('.wrapper-ul').toggleClass('d-none');
+            $('body').toggleClass('overflow-hidden')
+         })
+
+         $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#nav-collapse ul').toggleClass('toggle-hide');
+         });
+
+         var owl = $('.owl-carousel');
+         owl.owlCarousel({
+            margin: 5,
+            nav: false,
+            responsive: {
+               0: {
+                  items: 1
+               },
+               600: {
+                  items: 2
+               },
+               1000: {
+                  items: 3
+               }
+            }
+         })
+
+         var quotes = $('.quotes');
+         quotes.owlCarousel({
+            margin: 10,
+            mouseDrag: false,
+            touchDrag: false,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 7000,
+            autoplayHoverPause: true,
+
+            responsive: {
+               0: {
+                  items: 1
+               },
+               600: {
+                  items: 1
+               },
+               1000: {
+                  items: 1
+               }
+            }
+         })
+
+         $(".quotes").trigger("refresh.owl.carousel");
+
+
+
       })
-
-          
-      $('.btn-menu-nav').on('click', function(){
-         $('.menu-wrapper').toggleClass('hide');
-         $('.wrapper-ul').toggleClass('d-none');
-         $('body').toggleClass('overflow-hidden')
-      })
-
-      $('#nav-toggle').on('click', function (event) {
-         event.preventDefault();
-         $('#nav-collapse ul').toggleClass('toggle-hide');
-      });
-
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      margin: 10,
-      nav: false,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
-      }
-    })
-
-    var quotes = $('.quotes');
-    quotes.owlCarousel({
-      margin:10,
-      loop: true,
-      autoplay:true,
-      autoplayTimeout:10000,
-      autoplayHoverPause:true,
-
-      responsive: {
-         0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
-      }
-    })
-    
-
-
-
-  })
-</script>
-<script src="js/maps-api.js"></script>  
+   </script>
+   <script src="js/maps-api.js"></script>
 </body>
+
 </html>

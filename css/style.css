@@ -1,6 +1,11 @@
 body {
   background: #ECECEC;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+.vh-80 {
+  height: 80vh;
 }
 
 .card {
@@ -18,11 +23,6 @@ body {
 
 .mt-7 {
   margin-top: 7rem;
-}
-
-.fa-fw {
-  text-align: center;
-  width: 1.25em;
 }
 
 .form-control {
@@ -177,7 +177,7 @@ button.btn-menu-nav {
 
 .jumbotron-overlay {
   background-color: rgba(0, 0, 0, 0.329);
-  height: 100vh;
+  height: 100%;
   display: flex;
   position: relative;
 }
@@ -251,12 +251,6 @@ button.btn.bg-brown.p-2.radius-25:hover {
   box-shadow: 0px 15px 7px 7px #c1c1c1;
   transition: 0.3s all ease-in-out;
 }
-.card-height .order-first {
-  order: 1;
-}
-.card-height .order-last {
-  order: 3;
-}
 
 /* explain card */
 .explain-card {
@@ -286,6 +280,25 @@ button.btn.bg-brown.p-2.radius-25:hover {
 
 .card.card-how .card-header h4 {
   line-height: 2.3;
+}
+
+@media screen and (max-width: 991px) {
+  section.maps-info {
+    margin-bottom: 3.5rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  section.maps-info .card-maps .text-box {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  section.maps-info .card-maps .text-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* carousel owl styling */
@@ -437,7 +450,7 @@ section.quotes .owl-dots {
 }
 
 .banner-situs {
-  min-height: 350px;
+  min-height: 450px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -588,6 +601,10 @@ section.contact-list .card ul.list-group li.list-group-item a {
     margin-top: 3rem;
   }
 }
+.contact-title {
+  padding-top: 2.5rem;
+}
+
 /* footer */
 .footer-logo .uba-icon {
   font-size: 1.6rem;

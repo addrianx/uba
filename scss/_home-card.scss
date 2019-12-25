@@ -8,26 +8,20 @@
    height: 300px;
   }
 
-
-
   .card-first{
      min-height: 300px; 
      box-shadow: 0px 15px 7px 7px #c1c1c1;
      transition: .3s all ease-in-out;
    }
 
- 
+
   .card-height{
     min-height: 300px; 
     box-shadow: 0px 15px 7px 7px #c1c1c1;
     transition: .3s all ease-in-out;
-   .order-first{
-      order: 1;
-   }
-   .order-last{
-      order: 3;
-   }
   }
+
+  
 
   /* explain card */
   .explain-card{
@@ -64,3 +58,22 @@
       line-height: 2.3;
    }
   } 
+
+  section.maps-info{
+   @media screen and (max-width:991px){
+      margin-bottom: 3.5rem;
+   }
+   .card-maps{
+      .text-box{
+         @media screen and (max-width: 991px){
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+         }
+         @media screen and (min-width: 992px){
+            margin-left: auto;
+            margin-right: auto;
+         }
+      }
+   }
+  }
