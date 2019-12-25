@@ -33,13 +33,13 @@ function addDraggableMarker(map, behavior) {
 
   // Listen to the drag event and move the position of the marker
   // as necessary
-  map.addEventListener('drag', function (ev) {
-    var target = ev.target,
-      pointer = ev.currentPointer;
-    if (target instanceof H.map.Marker) {
-      target.setGeometry(map.screenToGeo(pointer.viewportX - target['offset'].x, pointer.viewportY - target['offset'].y));
-    }
-  }, false);
+  // map.addEventListener('drag', function (ev) {
+  //   var target = ev.target,
+  //     pointer = ev.currentPointer;
+  //   if (target instanceof H.map.Marker) {
+  //     target.setGeometry(map.screenToGeo(pointer.viewportX - target['offset'].x, pointer.viewportY - target['offset'].y));
+  //   }
+  // }, false);
 }
 
 /**
