@@ -32,7 +32,6 @@ body {
   .hidden-lg {
     display: none;
   }
-
   .w-1170 {
     width: 1170px;
     margin: 0 auto;
@@ -70,7 +69,7 @@ a.navbar-brand .uba-icon.uba-logo {
   margin-bottom: 1.5rem;
 }
 .menu-wrapper .wrapper-ul a.nav-link {
-  color: #e2e1e1;
+  color: rgb(226, 225, 225);
   font-weight: 700;
   position: relative;
   padding-top: 1.4rem;
@@ -208,7 +207,7 @@ button.btn-menu-nav {
 }
 
 .bg-brown {
-  background-color: #c4992c;
+  background-color: rgb(196, 153, 44);
   color: white;
 }
 
@@ -278,6 +277,32 @@ button.btn.bg-brown.p-2.radius-25:hover {
   transform: skewX(-51deg);
 }
 
+@media screen and (max-width: 991px) {
+  section.intro-image h3 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  .explain-card .card-body h4.jumbo-text {
+    font-size: 1.1rem;
+  }
+  section.maps-info h3 {
+    font-size: 1.4rem;
+  }
+  section.maps-info ul li a {
+    font-size: 0.8rem;
+  }
+  .fasilitas-box {
+    margin-bottom: 8rem;
+  }
+  .banner-situs h3 {
+    font-size: 1.2rem;
+  }
+  p.btm-child {
+    color: white;
+    margin-top: 1.6rem;
+    margin-left: 1.3rem;
+  }
+}
 .card.card-how .card-header h4 {
   line-height: 2.3;
 }
@@ -327,7 +352,7 @@ span.span-owl.bg-light.p-3 {
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  background: #000000c9 !important;
+  background: rgba(0, 0, 0, 0.7882352941) !important;
   color: white;
 }
 
@@ -458,7 +483,7 @@ section.quotes .owl-dots {
 .banner-situs h3 {
   text-transform: uppercase;
   font-weight: 700;
-  background: #4bb5abd1;
+  background: rgba(75, 181, 171, 0.8196078431);
   padding: 0.5rem;
 }
 
@@ -472,6 +497,10 @@ section.quotes .owl-dots {
 /* Halaman fasilitas */
 .caption-fasilitas {
   padding: 1.4rem;
+}
+
+.fasilitas-box {
+  margin-bottom: 8rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -496,7 +525,6 @@ section.quotes .owl-dots {
     right: 0;
     bottom: 0;
   }
-
   .fasilitas-image {
     background-size: cover;
     background-position: center;
@@ -506,9 +534,8 @@ section.quotes .owl-dots {
     left: 0;
     right: 0;
     height: 300px;
-    box-shadow: 3px 8px 14px 5px #0000007a;
+    box-shadow: 3px 8px 14px 5px rgba(0, 0, 0, 0.4784313725);
   }
-
   .order-lg-2 .fasilitas-image {
     right: -30px;
     left: 0px;
@@ -536,7 +563,6 @@ section.quotes .owl-dots {
     right: 0;
     bottom: 0;
   }
-
   .fasilitas-image {
     background-size: cover;
     background-position: center;
@@ -609,6 +635,9 @@ section.contact-list .card ul.list-group li.list-group-item a {
 .footer-logo .uba-icon {
   font-size: 1.6rem;
 }
+.footer-logo span.footer-logo-title {
+  font-size: 1.6rem;
+}
 
 ul.footer-list {
   padding-inline-start: 5px;
@@ -616,17 +645,17 @@ ul.footer-list {
 }
 ul.footer-list li {
   list-style: none;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
   display: inline-block;
-  font-size: 0.9rem;
 }
 ul.footer-list a {
   text-decoration: none;
   color: grey;
+  font-size: 0.9rem;
 }
 ul.footer-list:hover {
-  color: #dfdfdf;
+  color: rgb(223, 223, 223);
 }
 
 /*# sourceMappingURL=style.css.map */

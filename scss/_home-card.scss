@@ -53,6 +53,44 @@
       }
   }
 
+//   Responsive Mobile first 
+  @media screen and (max-width:991px){
+   section.intro-image h3{
+      font-size: 1.2rem;
+      font-weight: bolder;
+   }
+   .explain-card{
+      .card-body{
+         h4.jumbo-text{
+            font-size: 1.1rem;
+         }
+      }
+   }
+   section.maps-info{
+      h3{
+         font-size: 1.4rem;
+      }
+      ul li a{
+         font-size: .8rem;
+      }
+   }
+
+   .fasilitas-box{
+      margin-bottom: 8rem;
+   }
+
+   .banner-situs h3{
+      font-size: 1.2rem;
+   }
+
+   p.btm-child{
+      color: white;
+      margin-top: 1.6rem;
+      margin-left: 1.3rem;
+   }
+
+  }
+
   .card.card-how{
    .card-header h4{
       line-height: 2.3;
